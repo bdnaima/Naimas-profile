@@ -1,22 +1,113 @@
 body {
-  background-color: orange;
+  background-color: #FFA500;
 }
 
+/* Homepage */
 .App {
   text-align: center;
   font-family: sans-serif;
+}
+
+.App h1 {
+  margin-top: 4rem;
+}
+
+.App img {
+  width: 50vw;
 }
 
 .navbar-expand-lg .navbar-collapse {
   justify-content: flex-end;
 }
 
-img {
-  width: 50vw;
+.icons {
+  display: flex;
+  justify-content: center;
 }
 
+#email {
+  color: #000000;
+  margin-right: 1rem;
+  font-size: 2rem;
+}
+
+#email:hover {
+  color: #fff;
+}
+
+#gitHub {
+  color: #000000;
+  font-size: 2rem;
+}
+
+#gitHub:hover {
+  color: #fff;
+}
+
+/* About me */
+.about-section{
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  flex-direction: row-reverse;
+}
+
+.text-alignment {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.me {
+  max-width: 20vw;
+}
+
+/* Skill cards */
+.card-alignment {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.skills-alignment {
+  flex-direction: column;
+}
+.skills {
+  font-size: 6rem;
+  align-self: center;
+}
+
+/* Projects */
+.projects-title {
+  margin-top: 1rem;
+}
+
+.projects {
+  margin: 2rem 1rem;
+}
+
+.projects-alignment {
+  display: flex;
+}
+
+.projects a {
+  margin-right: 1rem;
+}
+
+
+/* Media Queries */
 @media (max-width: 1024px) {
   img {
     width: 100vw;
+  }
+
+  .about-section {
+    flex-direction: column-reverse;
+  }
+
+  .me {
+    align-self: center;
+  }
+
+  .projects-alignment {
+    flex-direction: column;
   }
 }
