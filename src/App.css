@@ -92,6 +92,22 @@ body {
   margin-right: 1rem;
 }
 
+/* Contact section */
+
+.contact-icons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact-icons #email {
+  font-size: 10rem;
+  margin-left: 2rem;
+}
+
+.contact-icons #gitHub {
+  font-size: 10rem;
+  margin-left: 2rem;
+}
 
 /* Media Queries */
 @media (max-width: 1024px) {
@@ -109,5 +125,10 @@ body {
 
   .projects-alignment {
     flex-direction: column;
+  }
+
+  .contact-icons {
+    flex-direction: column;
+    align-items: center;
   }
 }
