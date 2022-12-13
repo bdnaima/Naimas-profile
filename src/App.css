@@ -1,23 +1,23 @@
 body {
-  background-color: #FFA500;
+  background-color: #ffa500;
 }
 
 /* Homepage */
-.App {
+.picture {
   text-align: center;
   font-family: sans-serif;
 }
 
-.App h1 {
-  margin-top: 4rem;
-}
-
-.App img {
+.picture img {
   width: 50vw;
 }
 
 .navbar-expand-lg .navbar-collapse {
   justify-content: flex-end;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
 }
 
 .icons {
@@ -28,7 +28,7 @@ body {
 #email {
   color: #000000;
   margin-right: 1rem;
-  font-size: 2rem;
+  font-size: 4rem;
 }
 
 #email:hover {
@@ -37,7 +37,7 @@ body {
 
 #gitHub {
   color: #000000;
-  font-size: 2rem;
+  font-size: 4rem;
 }
 
 #gitHub:hover {
@@ -45,16 +45,12 @@ body {
 }
 
 /* About me */
-.about-section{
+.about-section {
   margin-top: 4rem;
   margin-bottom: 4rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
   flex-direction: row-reverse;
-}
-
-.text-alignment {
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .me {
@@ -111,7 +107,7 @@ body {
 
 /* Media Queries */
 @media (max-width: 1024px) {
-  img {
+  .picture img {
     width: 100vw;
   }
 
@@ -121,6 +117,7 @@ body {
 
   .me {
     align-self: center;
+    margin-top: 2rem;
   }
 
   .projects-alignment {
