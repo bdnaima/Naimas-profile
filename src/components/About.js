@@ -1,58 +1,140 @@
 import me from '../assets/images/Naima_at_work03.jpg';
-import { GiSkills, GiTeamIdea } from 'react-icons/gi';
+import { GiSkills } from 'react-icons/gi';
 
 
+import Frontend from './Frontend'
+import Backend from '../components/Backend'
+import Design from '../components/Design'
+import Other from '../components/Other'
+
+const frontendSkills = [
+    {
+        id: 1,
+        name: 'HTML5',
+        percentage: 90
+    },
+    {
+        id: 2,
+        name: 'CSS',
+        percentage: 80
+    },
+    {
+        id: 3,
+        name: 'Bootstrap',
+        percentage: 85
+    },
+    {
+        id: 4,
+        name: 'Saas',
+        percentage: 70
+    },
+    {
+        id: 5,
+        name: 'JavaScript',
+        percentage: 60
+    },
+    {
+        id: 6,
+        name: 'React',
+        percentage: 80
+    },
+]
+
+const backendSkills = [
+    {
+        id: 1,
+        name: 'Node.js',
+        percentage: 40
+    },
+    {
+        id: 2,
+        name: 'Firebase',
+        percentage: 80
+    },
+    {
+        id: 3,
+        name: 'MongoDB',
+        percentage: 50
+    },
+]
+
+const designSkills = [
+    {
+        id: 1,
+        name: 'Responsive Web Design',
+        percentage: 90
+    },
+    {
+        id: 2,
+        name: 'Adobe Creative Cloud',
+        percentage: 80
+    },
+    {
+        id: 3,
+        name: 'Figma',
+        percentage: 80
+    },
+]
+
+const otherSkills = [
+    {
+        id: 1,
+        name: 'GitHub',
+    },
+    {
+        id: 2,
+        name: 'UX/UI Design',
+    },
+    {
+        id: 3,
+        name: 'Agile Methodology',
+    },
+    {
+        id: 4,
+        name: 'Scrum',
+    },
+    {
+        id: 5,
+        name: 'Organizational Skills',
+    },
+    {
+        id: 6,
+        name: 'Time Management',
+    },
+]
 const About = () => {
     return (
         <>
             <div className="container">
-                <div className="card about-section">
+                <div className="about-section">
+                    <div className='me'>
+                        <img src={me} alt="naima" />
+                    </div>
                     <div className="card-body">
                         <h1 className="text-center">ABOUT ME</h1>
-                        <p className="card-text text-alignment">I have become passionate in designing and developing responsive websites for the past 5 years and continuously enjoy learning new technologies within web development.</p>
-
-                        <p className="card-text text-alignment">I have also graduated from a two-year program called Front-end Developer and have learned to write clean code and I am able to create dynamic websites using HTML, CSS and React. I also have experience creating low fidelity and high fidelity prototypes using Figma and Adobe XD.</p>
+                        <p className="card-text text-alignment">I have become passionate in designing and developing responsive websites for the past five years and continuously enjoy learning new technologies within web development.</p>
+                        <p className="card-text text-alignment">I have also graduated from a two-year program called Front-end Developer and have learned to write clean code and am able to create dynamic websites using HTML, CSS and React. I also have experience creating low fidelity and high fidelity prototypes using Figma and Adobe XD.</p>
                     </div>
-                    <img className="me" src={me} alt="naima" />
+
                 </div>
+
             </div>
 
             <div className=" container card-alignment">
-                <div className="card skills-alignment" style={{ width: "30rem", paddingTop: "2rem" }}>
-                    <GiSkills className="skills" />
-                    <div className="card-body">
-                        <h5 className="card-title text-center">Technical skills</h5>
-                        <ul className="list-group">
-                            <li className="list-group-item">HTML5</li>
-                            <li className="list-group-item">CSS3</li>
-                            <li className="list-group-item">JavaScript</li>
-                            <li className="list-group-item">SASS</li>
-                            <li className="list-group-item">Bootstrap</li>
-                            <li className="list-group-item">React</li>
-                            <li className="list-group-item">Basic Node.js</li>
-                            <li className="list-group-item">Responsive Web Design</li>
-                            <li className="list-group-item">Adobe Creative Cloud</li>
-                            <li className="list-group-item">Figma</li>
-                            <li className="list-group-item">Firebase</li>
-                            <li className="list-group-item">GitHub</li>
-                        </ul>
-                    </div>
+                <div className="skills_heading">
+                    <GiSkills className="skills_icon_person" />
+                    <h5 className="text-center">Technical skills</h5>
                 </div>
 
-                <div className="card skills-alignment" style={{ width: "30rem", paddingTop: "2rem" }}>
-                    <GiTeamIdea className="skills" />
-                    <div className="card-body">
-                        <h5 className="card-title text-center">Other skills</h5>
-                        <ul className="list-group">
-                            <li className="list-group-item">UX/UI Design</li>
-                            <li className="list-group-item">Problem Solving</li>
-                            <li className="list-group-item">Agile Methodology</li>
-                            <li className="list-group-item">Scrum</li>
-                            <li className="list-group-item">Organizational Skills</li>
-                            <li className="list-group-item">Time Management</li>
-                        </ul>
-                    </div>
-                </div>
+            </div>
+
+            <div className='container skills'>
+                <Frontend skills={frontendSkills} />
+                <Backend skills={backendSkills} />
+            </div>
+            <div className='container skills'>
+                <Design skills={designSkills} />
+                <Other skills={otherSkills} />
             </div>
         </>
     );

@@ -46,15 +46,21 @@ body {
 
 /* About me */
 .about-section {
+  display: flex;
+  max-width: 50rem;
   margin-top: 4rem;
   margin-bottom: 4rem;
-  margin-left: 3rem;
-  margin-right: 3rem;
-  flex-direction: row-reverse;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .me {
-  max-width: 20vw;
+ margin-top: 3rem;
+}
+
+.me img {
+
+  border-radius: 5rem;
 }
 
 /* Skill cards */
@@ -66,26 +72,127 @@ body {
 .skills-alignment {
   flex-direction: column;
 }
-.skills {
+
+/*Skills section*/
+.skills, .skills_expander {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border: 2px solid black;
+}
+
+.skills_heading {
+  display: flex;
+}
+
+.skills_heading h5 {
+  font-size: 4rem;
+  margin-left: 20px;
+}
+
+.skills_icon_person {
   font-size: 6rem;
-  align-self: center;
+}
+
+.skills_header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+.skills_icon, .skills_arrow {
+  color: purple;
+  font-size: 3rem;
+}
+
+.skills_title {
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+
+.skills_bar, .skills_percentage {
+  height: 5px;
+  border-radius: .25rem;
+}
+
+.skills_bar {
+  background-color: rgb(207, 183, 207);
+}
+
+.skills_percentage {
+  display: block;
+  background-color: purple;
+}
+
+.skills_number {
+  font-size: 25px;
+}
+
+.skills_list {
+  padding-bottom: 1rem;
+}
+
+.skills_list_other {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+progress {
+  appearance: none;
+  width: 100%;
+}
+
+progress::-webkit-progress-value {
+  background: purple;
+}
+
+progress::-webkit-progress-bar {
+  background: rgb(162, 102, 23);
+    border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
 }
 
 /* Projects */
+
+.card {
+  background-color: #ffde93;
+}
+
 .projects-title {
   margin-top: 1rem;
 }
 
 .projects {
   margin: 2rem 1rem;
+  max-width: 30rem;
 }
 
 .projects-alignment {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 66rem;
 }
 
 .projects a {
   margin-right: 1rem;
+}
+
+.img-settings img {
+  width: 100%;
+  max-width: 30rem;
+  max-height: 15rem;
 }
 
 /* Contact section */
@@ -127,5 +234,9 @@ body {
   .contact-icons {
     flex-direction: column;
     align-items: center;
+  }
+
+  .skills {
+  flex-direction: column;
   }
 }
