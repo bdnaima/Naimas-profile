@@ -1,14 +1,27 @@
-body {
-  background-color: #ffa500;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 /* Homepage */
-.picture {
-  text-align: center;
+.heading {
   font-family: sans-serif;
+  display: flex;
+}
+.heading h1 {
+  font-size: 1.5rem;
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  padding: 1rem;
+  align-self: center;
 }
 
-.picture img {
+.picture-orange {
+  background-color: #ffa500;
+}
+
+.picture-orange img {
   width: 50vw;
 }
 
@@ -16,13 +29,20 @@ body {
   justify-content: flex-end;
 }
 
-.navbar-dark .navbar-nav .nav-link {
-  color: white;
+.navbar-nav {
+  align-items: center;
+}
+
+#image-me {
+  width: 5vw;
+  border-radius: 1rem;
+  margin-right: 1rem;
 }
 
 .icons {
   display: flex;
   justify-content: center;
+  margin-top: 10rem;
 }
 
 #email {
@@ -54,13 +74,9 @@ body {
   margin-right: auto;
 }
 
-.me {
- margin-top: 3rem;
-}
-
 .me img {
-
-  border-radius: 5rem;
+  border-radius: 2rem;
+  height: 40vh;
 }
 
 /* Skill cards */
@@ -69,12 +85,19 @@ body {
   justify-content: space-evenly;
 }
 
+.about-me-card {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
 .skills-alignment {
   flex-direction: column;
 }
 
 /*Skills section*/
-.skills, .skills_expander {
+.skills,
+.skills_expander {
   display: flex;
   justify-content: space-between;
   padding-top: 1rem;
@@ -105,7 +128,8 @@ body {
   cursor: pointer;
 }
 
-.skills_icon, .skills_arrow {
+.skills_icon,
+.skills_arrow {
   color: purple;
   font-size: 3rem;
 }
@@ -117,10 +141,10 @@ body {
   margin-bottom: 1rem;
 }
 
-
-.skills_bar, .skills_percentage {
+.skills_bar,
+.skills_percentage {
   height: 5px;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
 }
 
 .skills_bar {
@@ -156,15 +180,15 @@ progress::-webkit-progress-value {
 }
 
 progress::-webkit-progress-bar {
-  background: rgb(162, 102, 23);
-    border-radius: 2px;
+  background: #fff;
+  border-radius: 2px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
 }
 
 /* Projects */
 
 .card {
-  background-color: #ffde93;
+  border: 2px solid black;
 }
 
 .projects-title {
@@ -214,10 +238,6 @@ progress::-webkit-progress-bar {
 
 /* Media Queries */
 @media (max-width: 1024px) {
-  .picture img {
-    width: 100vw;
-  }
-
   .about-section {
     flex-direction: column-reverse;
   }
@@ -237,6 +257,21 @@ progress::-webkit-progress-bar {
   }
 
   .skills {
-  flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .heading h1 {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .heading h1 {
+    font-size: 0.9rem;
+  }
+  #image-me {
+    width: 15vw;
   }
 }
