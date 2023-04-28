@@ -1,5 +1,4 @@
 import orangeLaptop from "../assets/images/orange-laptop.png";
-import imageOfMe from "../assets/images/Naima_at_work03.jpg";
 import { MdEmail } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
 

@@ -109,24 +109,27 @@ const otherSkills = [
 const About = () => {
   return (
     <>
-      <div className="container">
-        <div className="about-section">
-          <div className="me">
-            <img src={purpleMe} alt="naima" />
+      <div className="container p-3 mb-5">
+        <div className="row justify-content-center flex-row-reverse">
+          <div className="col-md-2 d-flex about-me">
+            <div className="me">
+              <img src={purpleMe} alt="naima" />
+            </div>
           </div>
-          <div className="card-body about-me-card">
+          <div className=" card-body col-md-4 align-self-center">
             <h1 className="text-center">ABOUT ME</h1>
-            <p className="card-text text-alignment">
+            <p className="card-text ">
               I have become passionate in designing and developing responsive
               websites for the past five years and continuously enjoy learning
               new technologies within web development.
             </p>
-            <p className="card-text text-alignment">
+            <p className="card-text ">
               I have also graduated from a two-year program called Front-end
               Developer and have learned to write clean code and am able to
               create dynamic websites using HTML, CSS and React. I also have
-              experience creating low fidelity and high fidelity prototypes
-              using Figma and Adobe XD.
+              experience as a UX/UI designer and love to conduct user research,
+              as well as creating wireframes and prototypes using Figma and
+              Adobe XD.
             </p>
           </div>
         </div>
