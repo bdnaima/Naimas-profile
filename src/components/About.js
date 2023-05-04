@@ -10,22 +10,22 @@ const frontendSkills = [
   {
     id: 1,
     name: "HTML5",
-    percentage: 90,
+    percentage: 80,
   },
   {
     id: 2,
     name: "CSS",
-    percentage: 90,
+    percentage: 80,
   },
   {
     id: 2,
     name: "CSS Animations",
-    percentage: 80,
+    percentage: 70,
   },
   {
     id: 3,
     name: "Bootstrap",
-    percentage: 85,
+    percentage: 80,
   },
   {
     id: 4,
@@ -40,7 +40,7 @@ const frontendSkills = [
   {
     id: 6,
     name: "React",
-    percentage: 80,
+    percentage: 70,
   },
 ];
 
@@ -53,7 +53,7 @@ const backendSkills = [
   {
     id: 2,
     name: "Firebase",
-    percentage: 80,
+    percentage: 70,
   },
   {
     id: 3,
@@ -66,7 +66,7 @@ const designSkills = [
   {
     id: 1,
     name: "Responsive Web Design",
-    percentage: 90,
+    percentage: 80,
   },
   {
     id: 2,
@@ -109,7 +109,7 @@ const otherSkills = [
 const About = () => {
   return (
     <>
-      <div className="container p-3 mb-5">
+      <div className="container p-3 mb-5" style={{ maxWidth: "45rem" }}>
         <div className="row justify-content-center flex-row-reverse">
           <div className="col-md-2 d-flex about-me">
             <div className="me">
@@ -142,11 +142,11 @@ const About = () => {
         </div>
       </div>
 
-      <div className="container skills">
+      <div className="container skills" style={{ maxWidth: "50rem" }}>
         <Frontend skills={frontendSkills} />
         <Backend skills={backendSkills} />
       </div>
-      <div className="container skills">
+      <div className="container skills" style={{ maxWidth: "50rem" }}>
         <Design skills={designSkills} />
         <Other skills={otherSkills} />
       </div>
