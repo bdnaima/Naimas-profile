@@ -9,11 +9,11 @@ const Projects = () => {
     <>
       <div className="container">
         <div className="card">
-          <div className="card-body">
+          <div className="card-body projects">
             <h1 className="text-center">Projects</h1>
             <p className="card-text" style={{ textAlign: "center" }}>
-              Below are the web applications I created using HTML, CSS, React
-              and Bootstrap.
+              Below are projects I have completed using HTML, CSS, React and
+              Bootstrap.
             </p>
           </div>
         </div>

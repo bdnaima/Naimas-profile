@@ -1,4 +1,4 @@
-import purpleMe from "../assets/images/purple-me1.jpg";
+import purpleMe from "../assets/images/profile-pic.png";
 import { GiSkills } from "react-icons/gi";
 
 import Frontend from "./Frontend";

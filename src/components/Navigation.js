@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import imageOfMe from "../assets/images/Naima_at_work03.jpg";
 
 const Navigation = () => {
   return (
@@ -7,7 +6,6 @@ const Navigation = () => {
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
-            <img id="image-me" src={imageOfMe} alt="Naima Malik" />
             Naima Malik Portfolio
           </Link>
           <button
