@@ -53,38 +53,21 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="icons">
-        <a href="mailto: naima.maria.malik@gmail.com">
-          <MdEmail id="email" />
-        </a>
-        <a
-          href="https://github.com/bdnaima?tab=repositories"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <FaGithub id="gitHub" />
-        </a>
-      </div>
-    </>
-  );
-};
-
-const Home2 = () => {
-  return (
-    <>
-      <section>
-        <div className="picture-orange">
-          <div className="heading">
-            <img src={orangeLaptop} alt="Laptop" />
-            <h1>Hi I'm Naima, Front-end developer & UX/UI Designer</h1>
-            <div className="blob-box">
-              <div className="blob">
-                <img id="image-me" src={imageOfMe} alt="Naima Malik" />
-              </div>
-            </div>
-          </div>
+      <div className="contact">
+        <h1>Contact</h1>
+        <div className="icons">
+          <a href="mailto: naima.maria.malik@gmail.com">
+            <MdEmail id="email" />
+          </a>
+          <a
+            href="https://github.com/bdnaima?tab=repositories"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaGithub id="gitHub" />
+          </a>
         </div>
-      </section>
+      </div>
     </>
   );
 };

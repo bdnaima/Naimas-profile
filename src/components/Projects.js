@@ -3,13 +3,14 @@ import gallery from "../assets/images/blackWhite.jpg";
 import tree from "../assets/images/tree.jpg";
 import dance from "../assets/images/dancer.jpg";
 import coding from "../assets/images/coding.jpg";
+import coffee from "../assets/images/coffee.jpg";
 
 const Projects = () => {
   return (
     <>
       <div className="container">
         <div className="card">
-          <div className="card-body projects">
+          <div className="card-body project-title">
             <h1 className="text-center">Projects</h1>
             <p className="card-text" style={{ textAlign: "center" }}>
               Below are projects I have completed using HTML, CSS, React and
@@ -22,10 +23,11 @@ const Projects = () => {
       <Carousel interval={3000}>
         <Carousel.Item>
           <div className="row p-5">
+            {/** Bring to light */}
             <div className="col-md-4">
               <Card className="card projects">
                 <Card.Img variant="top" src={tree} alt="..." />
-                <Card.Body>
+                <Card.Body className="cards">
                   <Card.Title>Bring To Light</Card.Title>
                   <Card.Text>
                     This was a project for a family member who needed a
@@ -52,6 +54,7 @@ const Projects = () => {
               </Card>
             </div>
 
+            {/** Ballet dance website */}
             <div className="col-md-4">
               <Card className="card projects">
                 <Card.Img variant="top" src={dance} alt="..." />
@@ -81,6 +84,7 @@ const Projects = () => {
                 </Card.Body>
               </Card>
             </div>
+            {/** Gallery website */}
             <div className="col-md-4">
               <Card className="card projects">
                 <Card.Img variant="top" src={gallery} alt="..." />
@@ -114,7 +118,38 @@ const Projects = () => {
         </Carousel.Item>
 
         <Carousel.Item>
+          {/** Coffee shop landing page */}
           <div className="row p-5">
+            <div className="col-md-4">
+              <Card className="card projects">
+                <Card.Img variant="top" src={coffee} alt="..." />
+                <Card.Body>
+                  <Card.Title>Coffeeshop landing page</Card.Title>
+                  <Card.Text>
+                    This was a small project where I created a landing page for
+                    a coffee shop. I created the page using only HTML and CSS.
+                  </Card.Text>
+                  <a
+                    href="https://bdnaima.github.io/CoffeeShop/"
+                    className="btn btn-secondary"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    View Site
+                  </a>
+                  <a
+                    href="https://github.com/bdnaima/CoffeeShop"
+                    className="btn btn-secondary"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Code
+                  </a>
+                </Card.Body>
+              </Card>
+            </div>
+
+            {/** Code Testing */}
             <div className="col-md-4">
               <Card className="card projects">
                 <Card.Img variant="top" src={coding} alt="..." />
@@ -145,10 +180,6 @@ const Projects = () => {
             </div>
           </div>
         </Carousel.Item>
-
-        {/* <Carousel.Item>
-          <div className="d-flex justify-content-around"></div>
-        </Carousel.Item> */}
       </Carousel>
     </>
   );
