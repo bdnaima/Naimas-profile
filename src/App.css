@@ -31,9 +31,9 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  margin-left: -2rem;
 }
 
-.stack > .stack-box,
 .stack > img {
   position: absolute;
   width: 50%;
@@ -279,6 +279,10 @@
 
   .skills_heading_position {
     flex-direction: column;
+  }
+
+  .skills_heading {
+    margin-left: 0%;
   }
 
   .contact-icons {
