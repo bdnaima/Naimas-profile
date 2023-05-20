@@ -20,13 +20,13 @@ const Contact = () => {
             </a>
           </div>
           <div>
-            <a href="tel: 0707175439">
+            <a href="https://www.linkedin.com/in/naima-maria-malik-6471ba82/">
               <SiLinkedin id="linkedIn" />
             </a>
           </div>
           <div>
             <a
-              href="https://www.linkedin.com/in/naima-maria-malik-6471ba82/"
+              href="https://github.com/bdnaima?tab=repositories"
               target="_blank"
               rel="noreferrer"
             >
