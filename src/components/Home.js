@@ -1,6 +1,9 @@
 import orangeLaptop from "../assets/images/orange-laptop.png";
 import { MdEmail } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
+import { GiSkills } from "react-icons/gi";
+import { FaPhone } from "react-icons/fa";
+import { SiLinkedin } from "react-icons/si";
 import imageOfMe from "../assets/images/Naima_at_work03.jpg";
 
 const Home = () => {
@@ -53,11 +56,85 @@ const Home = () => {
         </div>
       </div>
 
+      <div className="about-me">
+        <h1>ABOUT ME</h1>
+        <p>
+          I have become passionate in designing and developing responsive
+          websites for the past five years and continuously enjoy learning new
+          technologies within web development.
+        </p>
+        <p>
+          I have also graduated from a two-year program called Front-end
+          Developer and have learned to write clean code and am able to create
+          dynamic websites using HTML, CSS and React. I also have experience as
+          a UX/UI designer and love to conduct user research, as well as
+          creating wireframes and prototypes using Figma and Adobe XD.
+        </p>
+      </div>
+
+      <div>
+        <div className="skills_heading_position">
+          <div className="skills_heading">
+            <GiSkills className="skills_icon_person" />
+            <h1>Skills</h1>
+          </div>
+          <div className="skills-box1">
+            <ul class="list-group list-group-flush">
+              <h3>Frontend</h3>
+              <li class="list-group-item">HTML5</li>
+              <li class="list-group-item">CSS</li>
+              <li class="list-group-item">CSS Animations</li>
+              <li class="list-group-item">Bootstrap</li>
+              <li class="list-group-item">JavaScript</li>
+              <li class="list-group-item">React</li>
+              <li class="list-group-item">React Native</li>
+            </ul>
+
+            <ul class="list-group list-group-flush">
+              <h3>Backend</h3>
+              <li class="list-group-item">Node.js</li>
+              <li class="list-group-item">Express</li>
+              <li class="list-group-item">Firebase</li>
+              <li class="list-group-item">MongoDB</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="skills-box2">
+          <ul class="list-group list-group-flush">
+            <h3>Design</h3>
+            <li class="list-group-item">Responsive Web Design</li>
+            <li class="list-group-item">Adobe Creative Cloud</li>
+            <li class="list-group-item">Figma</li>
+          </ul>
+
+          <ul class="list-group list-group-flush">
+            <h3>Other skills</h3>
+            <li class="list-group-item">GitHub</li>
+            <li class="list-group-item">UX/UI Design</li>
+            <li class="list-group-item">Agile Methodology</li>
+            <li class="list-group-item">Scrum</li>
+            <li class="list-group-item">Organizational Skills</li>
+            <li class="list-group-item">Time Management</li>
+          </ul>
+        </div>
+      </div>
+
       <div className="contact">
-        <h1>Contact</h1>
+        <h1>Reach me here</h1>
         <div className="icons">
+          <a href="tel: +46707175439">
+            <FaPhone id="phone" />
+          </a>
           <a href="mailto: naima.maria.malik@gmail.com">
             <MdEmail id="email" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/naima-maria-malik-6471ba82/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <SiLinkedin id="linkedIn" />
           </a>
           <a
             href="https://github.com/bdnaima?tab=repositories"

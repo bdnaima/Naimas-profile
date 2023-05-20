@@ -127,7 +127,8 @@ const Projects = () => {
                   <Card.Title>Coffeeshop landing page</Card.Title>
                   <Card.Text>
                     This was a small project where I created a landing page for
-                    a coffee shop. I created the page using only HTML and CSS.
+                    a coffee shop. I created the page using only HTML, CSS and
+                    CSS Animations.
                   </Card.Text>
                   <a
                     href="https://bdnaima.github.io/CoffeeShop/"

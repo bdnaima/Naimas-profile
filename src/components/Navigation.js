@@ -24,9 +24,6 @@ const Navigation = () => {
               <Link className="nav-link" to="/">
                 Home
               </Link>
-              <Link className="nav-link" to="/about.js">
-                About Me
-              </Link>
               <Link className="nav-link" to="/projects.js">
                 My Projects
               </Link>
