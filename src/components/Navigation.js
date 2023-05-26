@@ -12,19 +12,21 @@ const Navigation = () => {
           transition={{ delay: 0.2, type: "spring", stiffness: 150 }}
         >
           <Link className="navbar-brand" to="/">
-            Naima Malik Portfolio
+            <motion.h5 whileHover={{ scale: 1.1 }}>
+              Naima Malik Portfolio
+            </motion.h5>
           </Link>
 
           <div id="navbarNavAltMarkup">
             <div className="navbar-nav">
               <Link className="nav-link" to="/">
-                Home
+                <motion.p whileHover={{ scale: 1.2 }}>Home</motion.p>
               </Link>
               <Link className="nav-link" to="/projects.js">
-                My Projects
+                <motion.p whileHover={{ scale: 1.2 }}>Projects</motion.p>
               </Link>
               <Link className="nav-link" to="/contact.js">
-                Contact
+                <motion.p whileHover={{ scale: 1.3 }}>Contact</motion.p>
               </Link>
             </div>
           </div>

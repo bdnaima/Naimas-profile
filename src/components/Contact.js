@@ -15,17 +15,17 @@ const Contact = () => {
           animate={{ x: 0 }}
           transition={{ type: "spring", duration: 1, bounce: 0.3 }}
         >
-          <div>
+          <motion.div whileHover={{ scale: 2 }}>
             <a href="mailto: naima.maria.malik@gmail.com">
               <MdEmail id="email" />
             </a>
-          </div>
-          <div>
+          </motion.div>
+          <motion.div whileHover={{ scale: 2 }}>
             <a href="https://www.linkedin.com/in/naima-maria-malik-6471ba82/">
               <SiLinkedin id="linkedIn" />
             </a>
-          </div>
-          <div>
+          </motion.div>
+          <motion.div whileHover={{ scale: 2 }}>
             <a
               href="https://github.com/bdnaima?tab=repositories"
               target="_blank"
@@ -33,7 +33,7 @@ const Contact = () => {
             >
               <FaGithub id="gitHub" />
             </a>
-          </div>
+          </motion.div>
         </motion.div>
       </div>
     </>
