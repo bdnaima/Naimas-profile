@@ -4,11 +4,15 @@
   box-sizing: border-box;
 }
 
+#root {
+  background-color: gray;
+}
+
 /*HOME*/
 .row-box {
   display: flex;
   justify-content: center;
-  background-color: #41345d;
+  background-color: #510169;
 }
 
 .laptop {
@@ -66,11 +70,14 @@
 .navbar-nav {
   align-items: center;
 }
+.container-fluid {
+  margin-top: 1rem;
+}
 
 /* Contact */
 .contact {
   text-align: center;
-  background-color: #41345d;
+  background-color: #510169;
   margin-top: 5rem;
   padding: 5rem;
   color: #fff;
@@ -104,25 +111,25 @@
   color: darkgray;
 }
 
-#phone {
-  color: #fff;
-  font-size: 3rem;
-}
-
-#phone:hover {
-  color: darkgray;
-}
-
 /* About me */
-
+.about-section {
+  display: flex;
+  margin-top: 1rem;
+}
+.flower-image {
+  align-self: center;
+  text-align: center;
+}
+.flower-image img {
+  width: 80%;
+}
 .about-me {
   max-width: 45%;
   margin-left: auto;
-  border: 2px solid;
   padding: 2rem;
-  margin-top: 5rem;
+  margin-top: 2rem;
   margin-right: 2rem;
-  background-color: #41345d;
+  background-color: #510169;
   color: #fff;
 }
 
@@ -138,7 +145,7 @@
   padding: 1rem;
   margin-top: 1rem;
   margin-left: 2rem;
-  background: #41345d;
+  background: #510169;
   color: white;
   font-weight: bold;
 }
@@ -154,7 +161,7 @@
   margin-top: 1rem;
   margin-left: auto;
   margin-right: 2rem;
-  background: #41345d;
+  background: #510169;
   color: white;
   font-weight: bold;
 }
@@ -173,7 +180,7 @@
   display: flex;
   margin-left: 19%;
   align-self: center;
-  background-color: #41345d;
+  background-color: #510169;
   opacity: 0.8;
   color: #fff;
   padding: 2rem;
@@ -197,7 +204,9 @@
 
 /* Projects */
 .project-title {
-  background-color: #41345d;
+  background-color: #510169;
+  padding: 1rem;
+  margin-top: 1rem;
 }
 
 .project-title > h1,
@@ -213,17 +222,11 @@
 }
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
-  background-color: #41345d;
+  background-color: #510169;
 }
 
 .carousel-indicators {
   display: none;
-}
-
-.card {
-  border: 2px solid black;
-  max-width: 100%;
-  margin: auto;
 }
 
 .projects a {
@@ -231,28 +234,41 @@
 }
 
 /* Contact section */
+.contact-container {
+  height: 45rem;
+  background-image: url("./assets/images/background-pattern.png");
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact-text {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 4rem;
+}
 .contact-icons {
   display: flex;
   justify-content: space-evenly;
-  background-color: #41345d;
-  padding: 5rem;
-  color: #fff;
+  background-color: transparent;
 }
 
 .contact-icons #email {
   font-size: 8em;
+  color: #510169;
 }
 
 .contact-icons #gitHub {
   font-size: 8rem;
+  color: #510169;
 }
 
 .contact-icons #linkedIn {
   font-size: 8rem;
+  color: #510169;
 }
-
-.contact-icons #phone {
-  font-size: 8rem;
+.green-pattern {
+  width: 80%;
 }
 
 /* Media Queries */
@@ -260,6 +276,19 @@
   .row-box {
     flex-direction: column;
     align-items: center;
+  }
+
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-section p {
+    text-align: left;
+  }
+
+  .flower-image img {
+    width: 40%;
   }
   .about-me {
     margin-right: auto;
@@ -283,6 +312,10 @@
 
   .skills_heading {
     margin-left: 0%;
+  }
+
+  .contact-text {
+    margin-bottom: 0;
   }
 
   .contact-icons {

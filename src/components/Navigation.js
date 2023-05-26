@@ -1,10 +1,16 @@
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Navigation = () => {
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <div className="container-fluid">
+        <motion.div
+          className="container-fluid"
+          initial={{ y: -250 }}
+          animate={{ y: -10 }}
+          transition={{ delay: 0.2, type: "spring", stiffness: 150 }}
+        >
           <Link className="navbar-brand" to="/">
             Naima Malik Portfolio
           </Link>
@@ -22,7 +28,7 @@ const Navigation = () => {
               </Link>
             </div>
           </div>
-        </div>
+        </motion.div>
       </nav>
     </>
   );

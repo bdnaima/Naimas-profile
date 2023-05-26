@@ -1,20 +1,32 @@
 import orangeLaptop from "../assets/images/orange-laptop.png";
+import imageOfMe from "../assets/images/Naima_at_work03.jpg";
+import flower from "../assets/images/flower.png";
+import sunflower from "../assets/images/sunflower.png";
 import { MdEmail } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
 import { GiSkills } from "react-icons/gi";
-import { FaPhone } from "react-icons/fa";
 import { SiLinkedin } from "react-icons/si";
-import imageOfMe from "../assets/images/Naima_at_work03.jpg";
+import { motion } from "framer-motion";
 
 const Home = () => {
   return (
     <>
       <div className="row-box">
-        <div className="laptop">
+        <motion.div
+          className="laptop"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.8, duration: 1.5 }}
+        >
           <h1>I'm Naima, Frontend developer & UX/UI Designer</h1>
           <img src={orangeLaptop} alt="orange laptop" />
-        </div>
-        <div className="stack">
+        </motion.div>
+        <motion.div
+          className="stack"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.8, duration: 1.5 }}
+        >
           <svg
             width="500"
             height="500"
@@ -53,23 +65,28 @@ const Home = () => {
             </path>
           </svg>
           <img id="img-move" src={imageOfMe} alt="picture of Naima" />
-        </div>
+        </motion.div>
       </div>
-
-      <div className="about-me">
-        <h1>ABOUT ME</h1>
-        <p>
-          I have become passionate in designing and developing responsive
-          websites for the past five years and continuously enjoy learning new
-          technologies within web development.
-        </p>
-        <p>
-          I have also graduated from a two-year program called Front-end
-          Developer and have learned to write clean code and am able to create
-          dynamic websites using HTML, CSS and React. I also have experience as
-          a UX/UI designer and love to conduct user research, as well as
-          creating wireframes and prototypes using Figma and Adobe XD.
-        </p>
+      <div className="about-section">
+        <div className="flower-image">
+          <img src={flower} alt="purple flower" />
+        </div>
+        <motion.div className="about-me">
+          <h1>ABOUT ME</h1>
+          <p>
+            I have become passionate in designing and developing responsive
+            websites for the past five years and continuously enjoy learning new
+            technologies within web development.
+          </p>
+          <p>
+            I have also graduated from a two-year program called Front-end
+            Developer and have worked as a junior frontend developer at Ikea. I
+            have learned to write clean code and am able to create dynamic
+            websites using HTML, CSS, JavaScript and React. I also have
+            experience as a UX/UI designer and love to conduct user research, as
+            well as creating wireframes and prototypes using Figma and Adobe XD.
+          </p>
+        </motion.div>
       </div>
 
       <div>
@@ -79,53 +96,55 @@ const Home = () => {
             <h1>Skills</h1>
           </div>
           <div className="skills-box1">
-            <ul class="list-group list-group-flush">
+            <ul className="list-group list-group-flush">
               <h3>Frontend</h3>
-              <li class="list-group-item">HTML5</li>
-              <li class="list-group-item">CSS</li>
-              <li class="list-group-item">CSS Animations</li>
-              <li class="list-group-item">Bootstrap</li>
-              <li class="list-group-item">JavaScript</li>
-              <li class="list-group-item">React</li>
-              <li class="list-group-item">React Native</li>
+              <li className="list-group-item">HTML5</li>
+              <li className="list-group-item">CSS</li>
+              <li className="list-group-item">CSS Animations</li>
+              <li className="list-group-item">Bootstrap</li>
+              <li className="list-group-item">JavaScript</li>
+              <li className="list-group-item">React</li>
+              <li className="list-group-item">React Native</li>
             </ul>
 
-            <ul class="list-group list-group-flush">
+            <ul className="list-group list-group-flush">
               <h3>Backend</h3>
-              <li class="list-group-item">Node.js</li>
-              <li class="list-group-item">Express</li>
-              <li class="list-group-item">Firebase</li>
-              <li class="list-group-item">MongoDB</li>
+              <li className="list-group-item">Node.js</li>
+              <li className="list-group-item">Express</li>
+              <li className="list-group-item">Firebase</li>
+              <li className="list-group-item">MongoDB</li>
             </ul>
           </div>
         </div>
 
-        <div className="skills-box2">
-          <ul class="list-group list-group-flush">
-            <h3>Design</h3>
-            <li class="list-group-item">Responsive Web Design</li>
-            <li class="list-group-item">Adobe Creative Cloud</li>
-            <li class="list-group-item">Figma</li>
-          </ul>
+        <div className="about-section">
+          <div className="flower-image">
+            <img src={sunflower} alt="orange sunflower" />
+          </div>
+          <div className="skills-box2">
+            <ul className="list-group list-group-flush">
+              <h3>Design</h3>
+              <li className="list-group-item">Responsive Web Design</li>
+              <li className="list-group-item">Adobe Creative Cloud</li>
+              <li className="list-group-item">Figma</li>
+            </ul>
 
-          <ul class="list-group list-group-flush">
-            <h3>Other skills</h3>
-            <li class="list-group-item">GitHub</li>
-            <li class="list-group-item">UX/UI Design</li>
-            <li class="list-group-item">Agile Methodology</li>
-            <li class="list-group-item">Scrum</li>
-            <li class="list-group-item">Organizational Skills</li>
-            <li class="list-group-item">Time Management</li>
-          </ul>
+            <ul className="list-group list-group-flush">
+              <h3>Other skills</h3>
+              <li className="list-group-item">GitHub</li>
+              <li className="list-group-item">UX/UI Design</li>
+              <li className="list-group-item">Agile Methodology</li>
+              <li className="list-group-item">Scrum</li>
+              <li className="list-group-item">Organizational Skills</li>
+              <li className="list-group-item">Time Management</li>
+            </ul>
+          </div>
         </div>
       </div>
 
       <div className="contact">
         <h1>Reach me here</h1>
         <div className="icons">
-          <a href="tel: +46707175439">
-            <FaPhone id="phone" />
-          </a>
           <a href="mailto: naima.maria.malik@gmail.com">
             <MdEmail id="email" />
           </a>

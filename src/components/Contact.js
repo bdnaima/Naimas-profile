@@ -1,19 +1,15 @@
 import { MdEmail } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
-import { FaPhone } from "react-icons/fa";
 import { SiLinkedin } from "react-icons/si";
+import pattern from "../assets/images/pattern.png";
 
 const Contact = () => {
   return (
     <>
-      <div className="container">
-        <h1 className="text-center">Contact</h1>
+      <div className="container contact-container">
+        <h1 className="contact-text">Contact</h1>
+
         <div className="contact-icons">
-          <div>
-            <a href="tel: 0707175439">
-              <FaPhone id="phone" />
-            </a>
-          </div>
           <div>
             <a href="mailto: naima.maria.malik@gmail.com">
               <MdEmail id="email" />

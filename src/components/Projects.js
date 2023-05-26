@@ -9,14 +9,12 @@ const Projects = () => {
   return (
     <>
       <div className="container">
-        <div className="card">
-          <div className="card-body project-title">
-            <h1 className="text-center">Projects</h1>
-            <p className="card-text" style={{ textAlign: "center" }}>
-              Below are projects I have completed using HTML, CSS, React and
-              Bootstrap.
-            </p>
-          </div>
+        <div className="project-title">
+          <h1 className="text-center">Projects</h1>
+          <p className="card-text" style={{ textAlign: "center" }}>
+            Below are projects I have completed using HTML, CSS, JavaScript,
+            React and Bootstrap.
+          </p>
         </div>
       </div>
 
