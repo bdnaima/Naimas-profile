@@ -144,7 +144,14 @@ const Home = () => {
 
         <div className="about-section">
           <div className="flower-image">
-            <img src={sunflower} alt="orange sunflower" />
+            <motion.img
+              src={sunflower}
+              alt="orange sunflower"
+              animate={{
+                rotate: [0, 200, 200, 0],
+              }}
+              transition={{ repeat: Infinity, delay: 0.1, duration: 10 }}
+            ></motion.img>
           </div>
           <div className="skills-box2">
             <ul className="list-group list-group-flush">
