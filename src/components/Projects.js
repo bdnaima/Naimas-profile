@@ -1,14 +1,24 @@
+import { motion } from "framer-motion";
 import { Carousel, Card } from "react-bootstrap";
 import gallery from "../assets/images/blackWhite.jpg";
 import tree from "../assets/images/tree.jpg";
 import dance from "../assets/images/dancer.jpg";
 import coding from "../assets/images/coding.jpg";
 import coffee from "../assets/images/coffee.jpg";
+import branch from "../assets/images/branch-swirl.png";
 
 const Projects = () => {
   return (
     <>
-      <div className="container">
+      <motion.div
+        className="container projects-container"
+        initial={{ x: "100vw" }}
+        animate={{ x: 0 }}
+        transition={{ type: "spring", duration: 1, bounce: 0.3 }}
+      >
+        <div className="image-branch">
+          <img src={branch} alt="brown branch" />
+        </div>
         <div className="project-title">
           <h1 className="text-center">Projects</h1>
           <p className="card-text" style={{ textAlign: "center" }}>
@@ -16,7 +26,7 @@ const Projects = () => {
             React and Bootstrap.
           </p>
         </div>
-      </div>
+      </motion.div>
 
       <Carousel interval={3000}>
         <Carousel.Item>

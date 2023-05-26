@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const Navigation = () => {
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <motion.div
           className="container-fluid"
           initial={{ y: -250 }}

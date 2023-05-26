@@ -1,7 +1,7 @@
+import { motion } from "framer-motion";
 import { MdEmail } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
 import { SiLinkedin } from "react-icons/si";
-import pattern from "../assets/images/pattern.png";
 
 const Contact = () => {
   return (
@@ -9,7 +9,12 @@ const Contact = () => {
       <div className="container contact-container">
         <h1 className="contact-text">Contact</h1>
 
-        <div className="contact-icons">
+        <motion.div
+          className="contact-icons"
+          initial={{ x: "100vw" }}
+          animate={{ x: 0 }}
+          transition={{ type: "spring", duration: 1, bounce: 0.3 }}
+        >
           <div>
             <a href="mailto: naima.maria.malik@gmail.com">
               <MdEmail id="email" />
@@ -29,7 +34,7 @@ const Contact = () => {
               <FaGithub id="gitHub" />
             </a>
           </div>
-        </div>
+        </motion.div>
       </div>
     </>
   );

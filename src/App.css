@@ -13,6 +13,7 @@
   display: flex;
   justify-content: center;
   background-color: #510169;
+  margin-top: 1rem;
 }
 
 .laptop {
@@ -21,8 +22,6 @@
 .laptop > img,
 .laptop > h1 {
   max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
   font-size: 1.5rem;
   background: rgba(0, 0, 0, 0.2);
   color: #fff;
@@ -81,6 +80,15 @@
   margin-top: 5rem;
   padding: 5rem;
   color: #fff;
+}
+
+.contact h1 {
+  margin-bottom: 2rem;
+}
+
+.icons {
+  width: 50%;
+  margin: auto;
 }
 
 #email {
@@ -203,10 +211,21 @@
 }
 
 /* Projects */
+.projects-container {
+  display: flex;
+  align-items: center;
+}
+.image-branch {
+  align-self: center;
+  text-align: center;
+  margin-top: 1rem;
+}
+.image-branch img {
+  width: 40%;
+}
 .project-title {
   background-color: #510169;
   padding: 1rem;
-  margin-top: 1rem;
 }
 
 .project-title > h1,
@@ -236,6 +255,7 @@
 /* Contact section */
 .contact-container {
   height: 45rem;
+  margin-top: 1rem;
   background-image: url("./assets/images/background-pattern.png");
   background-repeat: no-repeat;
   display: flex;
@@ -273,6 +293,7 @@
 
 /* Media Queries */
 @media (max-width: 768px) {
+  /* Home */
   .row-box {
     flex-direction: column;
     align-items: center;
@@ -290,6 +311,7 @@
   .flower-image img {
     width: 40%;
   }
+
   .about-me {
     margin-right: auto;
     max-width: 100%;
@@ -312,8 +334,15 @@
 
   .skills_heading {
     margin-left: 0%;
+    margin-top: 1rem;
   }
 
+  /* Projects */
+  .projects-container {
+    flex-direction: column;
+  }
+
+  /* Contact */
   .contact-text {
     margin-bottom: 0;
   }

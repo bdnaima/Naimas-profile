@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
+import { motion, useAnimation } from "framer-motion";
 import orangeLaptop from "../assets/images/orange-laptop.png";
 import imageOfMe from "../assets/images/Naima_at_work03.jpg";
 import flower from "../assets/images/flower.png";
@@ -6,9 +9,30 @@ import { MdEmail } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
 import { GiSkills } from "react-icons/gi";
 import { SiLinkedin } from "react-icons/si";
-import { motion } from "framer-motion";
 
 const Home = () => {
+  const { ref, inView } = useInView({
+    threshold: 0.3,
+  });
+  const animation = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      animation.start({
+        x: 0,
+        transition: {
+          type: "spring",
+          duration: 1,
+          bounce: 0.3,
+        },
+      });
+    }
+
+    if (!inView) {
+      animation.start({ x: "100vw" });
+    }
+  }, [inView]);
+
   return (
     <>
       <div className="row-box">
@@ -16,7 +40,7 @@ const Home = () => {
           className="laptop"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0.8, duration: 1.5 }}
+          transition={{ delay: 0.5, duration: 2 }}
         >
           <h1>I'm Naima, Frontend developer & UX/UI Designer</h1>
           <img src={orangeLaptop} alt="orange laptop" />
@@ -25,7 +49,7 @@ const Home = () => {
           className="stack"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0.8, duration: 1.5 }}
+          transition={{ delay: 0.5, duration: 2 }}
         >
           <svg
             width="500"
@@ -67,11 +91,11 @@ const Home = () => {
           <img id="img-move" src={imageOfMe} alt="picture of Naima" />
         </motion.div>
       </div>
-      <div className="about-section">
+      <div ref={ref} className="about-section">
         <div className="flower-image">
           <img src={flower} alt="purple flower" />
         </div>
-        <motion.div className="about-me">
+        <motion.div className="about-me" animate={animation}>
           <h1>ABOUT ME</h1>
           <p>
             I have become passionate in designing and developing responsive
@@ -79,9 +103,9 @@ const Home = () => {
             technologies within web development.
           </p>
           <p>
-            I have also graduated from a two-year program called Front-end
-            Developer and have worked as a junior frontend developer at Ikea. I
-            have learned to write clean code and am able to create dynamic
+            I have also graduated from a two-year program called Frontend
+            Development and have worked as a junior frontend developer at Ikea.
+            I have learned to write clean code and am able to create dynamic
             websites using HTML, CSS, JavaScript and React. I also have
             experience as a UX/UI designer and love to conduct user research, as
             well as creating wireframes and prototypes using Figma and Adobe XD.
@@ -105,6 +129,7 @@ const Home = () => {
               <li className="list-group-item">JavaScript</li>
               <li className="list-group-item">React</li>
               <li className="list-group-item">React Native</li>
+              <li className="list-group-item">Framer Motion</li>
             </ul>
 
             <ul className="list-group list-group-flush">
@@ -144,10 +169,17 @@ const Home = () => {
 
       <div className="contact">
         <h1>Reach me here</h1>
-        <div className="icons">
+        <motion.div
+          className="icons"
+          whileHover={{
+            scale: 1.1,
+            boxShadow: "0px 0px 8px rgb(255, 255, 255)",
+          }}
+        >
           <a href="mailto: naima.maria.malik@gmail.com">
             <MdEmail id="email" />
           </a>
+
           <a
             href="https://www.linkedin.com/in/naima-maria-malik-6471ba82/"
             target="_blank"
@@ -162,7 +194,7 @@ const Home = () => {
           >
             <FaGithub id="gitHub" />
           </a>
-        </div>
+        </motion.div>
       </div>
     </>
   );
