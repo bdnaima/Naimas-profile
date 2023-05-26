@@ -20,10 +20,10 @@ const Navigation = () => {
           <div id="navbarNavAltMarkup">
             <div className="navbar-nav">
               <Link className="nav-link" to="/">
-                <motion.p whileHover={{ scale: 1.2 }}>Home</motion.p>
+                <motion.p whileHover={{ scale: 1.3 }}>Home</motion.p>
               </Link>
               <Link className="nav-link" to="/projects.js">
-                <motion.p whileHover={{ scale: 1.2 }}>Projects</motion.p>
+                <motion.p whileHover={{ scale: 1.3 }}>Projects</motion.p>
               </Link>
               <Link className="nav-link" to="/contact.js">
                 <motion.p whileHover={{ scale: 1.3 }}>Contact</motion.p>
