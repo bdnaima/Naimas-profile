@@ -166,7 +166,7 @@ const Projects = () => {
                   <Card.Title>Code Testing</Card.Title>
                   <Card.Text>
                     This was a small project where I created a landing page for
-                    code testing. I created the page using only HTML and CSS.
+                    code testing. I created the page using HTML and CSS.
                   </Card.Text>
                   <a
                     href="https://code-testing-landing-page.web.app/"

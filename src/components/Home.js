@@ -156,6 +156,7 @@ const Home = () => {
           <div className="skills-box2">
             <ul className="list-group list-group-flush">
               <h3>Design</h3>
+              <li className="list-group-item">UX/UI Design</li>
               <li className="list-group-item">Responsive Web Design</li>
               <li className="list-group-item">Adobe Creative Cloud</li>
               <li className="list-group-item">Figma</li>
@@ -164,7 +165,6 @@ const Home = () => {
             <ul className="list-group list-group-flush">
               <h3>Other skills</h3>
               <li className="list-group-item">GitHub</li>
-              <li className="list-group-item">UX/UI Design</li>
               <li className="list-group-item">Agile Methodology</li>
               <li className="list-group-item">Scrum</li>
               <li className="list-group-item">Organizational Skills</li>
