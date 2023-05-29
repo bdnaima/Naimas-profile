@@ -177,7 +177,7 @@ const Projects = () => {
                     View Site
                   </a>
                   <a
-                    href="https://github.com/bdnaima/photo-gallery-app/commits/master"
+                    href="https://github.com/bdnaima/Testing-code-landing-page"
                     className="btn btn-secondary"
                     target="_blank"
                     rel="noreferrer"
