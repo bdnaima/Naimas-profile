@@ -5,7 +5,7 @@
 }
 
 #root {
-  background-color: gray;
+  background-color: rgb(207, 204, 204);
 }
 
 /*HOME*/
@@ -140,7 +140,7 @@
   margin-right: 2rem;
   background-color: #510169;
   color: #fff;
-  box-shadow: 17px 17px #000;
+  box-shadow: 17px 17px #212529;
 }
 
 .about-me h1 {
@@ -158,7 +158,7 @@
   background: #510169;
   color: white;
   font-weight: bold;
-  box-shadow: 17px 17px #000;
+  box-shadow: 17px 17px #212529;
 }
 .skills-box1 ul {
   width: 50%;
@@ -175,7 +175,7 @@
   background: #510169;
   color: white;
   font-weight: bold;
-  box-shadow: 17px 17px #000;
+  box-shadow: 17px 17px #212529;
 }
 
 .skills-box2 ul {
@@ -192,7 +192,6 @@
   color: #fff;
   padding: 2rem;
   border-radius: 20%;
-  -webkit-box-shadow: 0 0 10px #000;
   box-shadow: 0 0 30px #000;
 }
 
