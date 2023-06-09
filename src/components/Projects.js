@@ -20,11 +20,26 @@ const Projects = () => {
           <img src={branch} alt="brown branch" />
         </div>
         <div className="project-title">
-          <h1>Projects</h1>
+          <h1>Frontend Projects</h1>
           <p className="card-text">
             Below are projects I have completed using HTML, CSS, JavaScript,
             React and Bootstrap.
           </p>
+        </div>
+        <div className="project-title">
+          <h1>UX/UI Projects</h1>
+          <p className="card-text">
+            I have also created UX/UI design case studies, which can be be
+            viewed in my UX/UI Design portfolio .
+          </p>
+          <a
+            href="https://bdnaima.github.io/UX-UI_projects/"
+            className="btn btn-secondary"
+            target="_blank"
+            rel="noreferrer"
+          >
+            View Portfolio
+          </a>
         </div>
       </motion.div>
 

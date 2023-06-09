@@ -215,6 +215,7 @@
   display: flex;
   align-items: center;
   margin-top: 1rem;
+  padding: 1rem;
   box-shadow: 0 0 30px #000;
 }
 .image-branch {
@@ -223,7 +224,7 @@
   margin-top: 1rem;
 }
 .image-branch img {
-  width: 40%;
+  width: 50%;
 }
 .project-title {
   background-color: #704fa7;
@@ -347,12 +348,16 @@
   }
 
   /* Projects */
+  .projects {
+    margin-top: 2rem;
+  }
   .projects-container {
     flex-direction: column;
   }
 
   .project-title {
     margin-right: 0;
+    margin-top: 1rem;
   }
 
   /* Contact */
