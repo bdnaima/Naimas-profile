@@ -211,6 +211,7 @@
 }
 
 /* Projects */
+
 .projects-container {
   display: flex;
   align-items: center;
@@ -240,7 +241,7 @@
 }
 
 .projects {
-  box-shadow: 0 5px 5px 5px #4c4e52;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .carousel-control-next,

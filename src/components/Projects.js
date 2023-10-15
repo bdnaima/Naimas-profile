@@ -6,6 +6,7 @@ import dance from "../assets/images/dancer.jpg";
 import coding from "../assets/images/coding.jpg";
 import coffee from "../assets/images/coffee.jpg";
 import branch from "../assets/images/branch-swirl.png";
+import weatherApp from "../assets/images/weather-app.png";
 
 const Projects = () => {
   return (
@@ -46,8 +47,38 @@ const Projects = () => {
       <Carousel interval={3000}>
         <Carousel.Item>
           <div className="row p-5">
+            {/** Weather App */}
+            <div className="col-md-3">
+              <Card className="card projects">
+                <Card.Img variant="top" src={weatherApp} alt="Weather" />
+                <Card.Body className="cards">
+                  <Card.Title>Weather App</Card.Title>
+                  <Card.Text>
+                    This was a group project that I created for a course at
+                    Technigo. We created HTML, CSS, CSS Animation and Vanilla
+                    JavaScript.
+                  </Card.Text>
+                  <a
+                    href="https://weather-app-by-priya-and-naima.netlify.app/"
+                    className="btn btn-secondary"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    View Site
+                  </a>
+                  <a
+                    href="https://github.com/bdnaima/Bring-to-light/commits/master"
+                    className="btn btn-secondary"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Code
+                  </a>
+                </Card.Body>
+              </Card>
+            </div>
             {/** Bring to light */}
-            <div className="col-md-4">
+            <div className="col-md-3">
               <Card className="card projects">
                 <Card.Img variant="top" src={tree} alt="..." />
                 <Card.Body className="cards">
@@ -78,7 +109,7 @@ const Projects = () => {
             </div>
 
             {/** Ballet dance website */}
-            <div className="col-md-4">
+            <div className="col-md-3">
               <Card className="card projects">
                 <Card.Img variant="top" src={dance} alt="..." />
                 <Card.Body>
@@ -107,8 +138,13 @@ const Projects = () => {
                 </Card.Body>
               </Card>
             </div>
+          </div>
+        </Carousel.Item>
+
+        <Carousel.Item>
+          <div className="row p-5">
             {/** Gallery website */}
-            <div className="col-md-4">
+            <div className="col-md-3">
               <Card className="card projects">
                 <Card.Img variant="top" src={gallery} alt="..." />
                 <Card.Body>
@@ -137,13 +173,9 @@ const Projects = () => {
                 </Card.Body>
               </Card>
             </div>
-          </div>
-        </Carousel.Item>
 
-        <Carousel.Item>
-          {/** Coffee shop landing page */}
-          <div className="row p-5">
-            <div className="col-md-4">
+            {/** Coffee shop landing page */}
+            <div className="col-md-3">
               <Card className="card projects">
                 <Card.Img variant="top" src={coffee} alt="..." />
                 <Card.Body>
@@ -174,7 +206,7 @@ const Projects = () => {
             </div>
 
             {/** Code Testing */}
-            <div className="col-md-4">
+            <div className="col-md-3">
               <Card className="card projects">
                 <Card.Img variant="top" src={coding} alt="..." />
                 <Card.Body>
