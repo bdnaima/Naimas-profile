@@ -140,7 +140,7 @@
   margin-right: 2rem;
   background-color: #704fa7;
   color: #fff;
-  box-shadow: 17px 17px #212529;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .about-me h1 {
@@ -158,7 +158,7 @@
   background: #704fa7;
   color: white;
   font-weight: bold;
-  box-shadow: 17px 17px #212529;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .skills-box1 ul {
   width: 50%;
@@ -175,7 +175,7 @@
   background: #704fa7;
   color: white;
   font-weight: bold;
-  box-shadow: 17px 17px #212529;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .skills-box2 ul {
