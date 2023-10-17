@@ -55,8 +55,7 @@ const Projects = () => {
                   <Card.Title>Weather App</Card.Title>
                   <Card.Text>
                     This was a group project that I created for a course at
-                    Technigo. We created HTML, CSS, CSS Animation and Vanilla
-                    JavaScript.
+                    Technigo.
                   </Card.Text>
                   <a
                     href="https://weather-app-by-priya-and-naima.netlify.app/"
@@ -67,7 +66,7 @@ const Projects = () => {
                     View Site
                   </a>
                   <a
-                    href="https://github.com/bdnaima/Bring-to-light/commits/master"
+                    href="https://github.com/Priya-Pdh/project-weather-app"
                     className="btn btn-secondary"
                     target="_blank"
                     rel="noreferrer"
