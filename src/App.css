@@ -352,6 +352,7 @@
   /* Projects */
   .projects {
     margin-top: 2rem;
+    margin-bottom: 2rem;
   }
   .projects-container {
     flex-direction: column;
