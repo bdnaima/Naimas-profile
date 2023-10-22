@@ -1,0 +1,41 @@
+import { Card } from "react-bootstrap";
+import weatherApp from "../../assets/images/weather-app.png";
+
+const WeatherApp = () => {
+  return (
+    <>
+      {/** Weather App */}
+      <div className="col-md-3 mb-3">
+        <Card className="card projects">
+          <Card.Img variant="top" src={weatherApp} alt="Weather" />
+          <Card.Body className="cards">
+            <Card.Title>Weather App</Card.Title>
+            <Card.Text>
+              This was a group project that I created for the JavaScript & React
+              course at Technigo. It was built with HTML, CSS, CSS animations
+              and vanilla JavaScript.
+            </Card.Text>
+            <a
+              href="https://weather-app-by-priya-and-naima.netlify.app/"
+              className="btn btn-secondary"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View Site
+            </a>
+            <a
+              href="https://github.com/bdnaima/project-weather-app"
+              className="btn btn-secondary"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Code
+            </a>
+          </Card.Body>
+        </Card>
+      </div>
+    </>
+  );
+};
+
+export default WeatherApp;
