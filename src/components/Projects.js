@@ -7,6 +7,7 @@ import coding from "../assets/images/coding.jpg";
 import coffee from "../assets/images/coffee.jpg";
 import branch from "../assets/images/branch-swirl.png";
 import weatherApp from "../assets/images/weather-app.png";
+import book from "../assets/images/pride-and-prejudice.jpg";
 
 const Projects = () => {
   return (
@@ -52,8 +53,9 @@ const Projects = () => {
             <Card.Body className="cards">
               <Card.Title>Weather App</Card.Title>
               <Card.Text>
-                This was a group project that I created for a course at
-                Technigo.
+                This was a group project that I created for the JavaScript &
+                React course at Technigo. It was built with HTML, CSS, CSS
+                animations and vanilla JavaScript.
               </Card.Text>
               <a
                 href="https://weather-app-by-priya-and-naima.netlify.app/"
@@ -64,7 +66,37 @@ const Projects = () => {
                 View Site
               </a>
               <a
-                href="https://github.com/Priya-Pdh/project-weather-app"
+                href="https://github.com/bdnaima/project-weather-app"
+                className="btn btn-secondary"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Code
+              </a>
+            </Card.Body>
+          </Card>
+        </div>
+        {/** Book App */}
+        <div className="col-md-3 mb-3">
+          <Card className="card projects">
+            <Card.Img variant="top" src={book} alt="Weather" />
+            <Card.Body className="cards">
+              <Card.Title>Library App</Card.Title>
+              <Card.Text>
+                Another project created for the JavaScript & React course at
+                Technigo. I created this app using HTML, CSS and vanilla
+                JavaScript.
+              </Card.Text>
+              <a
+                href="https://book-app-by-naima.netlify.app/"
+                className="btn btn-secondary"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View Site
+              </a>
+              <a
+                href="https://github.com/bdnaima/Naimas-project-library"
                 className="btn btn-secondary"
                 target="_blank"
                 rel="noreferrer"
