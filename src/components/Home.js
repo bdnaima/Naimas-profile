@@ -11,27 +11,9 @@ import { GiSkills } from "react-icons/gi";
 import { SiLinkedin } from "react-icons/si";
 
 const Home = () => {
-  const { ref, inView } = useInView({
+  const { ref } = useInView({
     threshold: 0.3,
   });
-  const animation = useAnimation();
-
-  useEffect(() => {
-    if (inView) {
-      animation.start({
-        x: 0,
-        transition: {
-          type: "spring",
-          duration: 1,
-          bounce: 0.3,
-        },
-      });
-    }
-
-    if (!inView) {
-      animation.start({ x: "100vw" });
-    }
-  }, [inView]);
 
   return (
     <>
@@ -95,7 +77,7 @@ const Home = () => {
         <div className="flower-image">
           <img src={flower} alt="purple flower" />
         </div>
-        <motion.div className="about-me" animate={animation}>
+        <div className="about-me">
           <h1>ABOUT ME</h1>
           <p>
             I have become passionate in designing and developing responsive
@@ -110,7 +92,7 @@ const Home = () => {
             experience as a UX/UI designer and love to conduct user research, as
             well as creating wireframes and prototypes using Figma and Adobe XD.
           </p>
-        </motion.div>
+        </div>
       </div>
 
       <div>
