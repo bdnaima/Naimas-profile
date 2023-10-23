@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import "../styles/Projects.css";
 
 //Components
 import MusicApp from "./projects/MusicApp";

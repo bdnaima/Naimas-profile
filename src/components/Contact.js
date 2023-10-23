@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import "../styles/Contact.css";
+
 import { MdEmail } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
 import { SiLinkedin } from "react-icons/si";
