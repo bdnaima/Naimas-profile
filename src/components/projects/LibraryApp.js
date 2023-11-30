@@ -16,22 +16,24 @@ const LibraryApp = () => {
               Technigo. I created this app using HTML, CSS and vanilla
               JavaScript.
             </Card.Text>
-            <a
-              href="https://book-app-by-naima.netlify.app/"
-              className="btn btn-secondary"
-              target="_blank"
-              rel="noreferrer"
-            >
-              View Site
-            </a>
-            <a
-              href="https://github.com/bdnaima/Naimas-project-library"
-              className="btn btn-secondary"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Code
-            </a>
+            <div className="website-view-buttons">
+              <a
+                href="https://book-app-by-naima.netlify.app/"
+                className="btn btn-secondary"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View Site
+              </a>
+              <a
+                href="https://github.com/bdnaima/Naimas-project-library"
+                className="btn btn-secondary"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Code
+              </a>
+            </div>
           </Card.Body>
         </Card>
       </div>

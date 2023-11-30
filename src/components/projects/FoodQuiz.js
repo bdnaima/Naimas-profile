@@ -1,25 +1,29 @@
 import { Card } from "react-bootstrap";
-import coding from "../../assets/images/coding.jpg";
+import food from "../../assets/images/food.png";
 import "../../styles/Projects.css";
 
-const CodeTesting = () => {
+const FoodQuiz = () => {
   return (
     <>
-      {/** Code Testing */}
+      {/** Food app */}
       <div className="individual-card">
         <Card className="projects">
-          <Card.Img variant="top" src={coding} alt="Code" />
+          <Card.Img
+            variant="top"
+            src={food}
+            alt="Food"
+            style={{ width: "17.3rem" }}
+          />
           <Card.Body>
-            <Card.Title>Code Testing</Card.Title>
+            <Card.Title>Food Quiz</Card.Title>
             <Card.Text>
-              This was a small project that I did on my own where I created a
-              landing page for code testing. I created the page using HTML and
-              CSS.
+              This was a project completed in a team where we created a food
+              quiz that includes a timer and the score. Here we used React,
+              React Router, Redux and CSS.
             </Card.Text>
             <div className="website-view-buttons">
-              {" "}
               <a
-                href="https://code-testing-landing-page.web.app/"
+                href="https://movie-app-by-priya-naima-sarah.netlify.app/"
                 className="btn btn-secondary"
                 target="_blank"
                 rel="noreferrer"
@@ -27,7 +31,7 @@ const CodeTesting = () => {
                 View Site
               </a>
               <a
-                href="https://github.com/bdnaima/Testing-code-landing-page"
+                href="https://github.com/bdnaima/project-movies-vite"
                 className="btn btn-secondary"
                 target="_blank"
                 rel="noreferrer"
@@ -42,4 +46,4 @@ const CodeTesting = () => {
   );
 };
 
-export default CodeTesting;
+export default FoodQuiz;

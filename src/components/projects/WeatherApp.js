@@ -16,22 +16,24 @@ const WeatherApp = () => {
               course at Technigo. It was built with HTML, CSS, CSS animations
               and vanilla JavaScript.
             </Card.Text>
-            <a
-              href="https://weather-app-by-priya-and-naima.netlify.app/"
-              className="btn btn-secondary"
-              target="_blank"
-              rel="noreferrer"
-            >
-              View Site
-            </a>
-            <a
-              href="https://github.com/bdnaima/project-weather-app"
-              className="btn btn-secondary"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Code
-            </a>
+            <div className="website-view-buttons">
+              <a
+                href="https://weather-app-by-priya-and-naima.netlify.app/"
+                className="btn btn-secondary"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View Site
+              </a>
+              <a
+                href="https://github.com/bdnaima/project-weather-app"
+                className="btn btn-secondary"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Code
+              </a>
+            </div>
           </Card.Body>
         </Card>
       </div>

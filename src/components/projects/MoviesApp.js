@@ -16,22 +16,24 @@ const MoviesApp = () => {
               site, using themoviedb.org API. Here I used React, React Router
               and CSS.
             </Card.Text>
-            <a
-              href="https://movie-app-by-priya-naima-sarah.netlify.app/"
-              className="btn btn-secondary"
-              target="_blank"
-              rel="noreferrer"
-            >
-              View Site
-            </a>
-            <a
-              href="https://github.com/bdnaima/project-survey-vite"
-              className="btn btn-secondary"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Code
-            </a>
+            <div className="website-view-buttons">
+              <a
+                href="https://movie-app-by-priya-naima-sarah.netlify.app/"
+                className="btn btn-secondary"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View Site
+              </a>
+              <a
+                href="https://github.com/bdnaima/project-movies-vite"
+                className="btn btn-secondary"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Code
+              </a>
+            </div>
           </Card.Body>
         </Card>
       </div>

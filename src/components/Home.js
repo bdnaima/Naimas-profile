@@ -18,6 +18,8 @@ import GalleryApp from "./projects/GalleryApp";
 import DanceApp from "./projects/DanceApp";
 import CoffeeLandingPage from "./projects/CoffeeLandingPage";
 import CodeTesting from "./projects/CodeTesting";
+import FoodQuiz from "./projects/FoodQuiz";
+import TodoApp from "./projects/TodoApp";
 
 const Home = () => {
   const { ref } = useInView({
@@ -174,6 +176,8 @@ const Home = () => {
       <div className="projects-container">
         <MoviesApp />
         <MusicApp />
+        <TodoApp />
+        <FoodQuiz />
         <Survey />
         <WeatherApp />
         <LibraryApp />

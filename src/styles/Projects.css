@@ -37,9 +37,17 @@
 }
 
 /*Cards */
+.food-image {
+  width: 4px;
+}
+
+.website-view-buttons {
+  display: flex;
+  justify-content: flex-end;
+}
 
 .projects a {
-  margin-right: 1rem;
+  margin-right: 0.8rem;
 }
 
 /* Media Queries */

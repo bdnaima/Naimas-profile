@@ -1,25 +1,24 @@
 import { Card } from "react-bootstrap";
-import coding from "../../assets/images/coding.jpg";
+import todo from "../../assets/images/todo.png";
 import "../../styles/Projects.css";
 
-const CodeTesting = () => {
+const TodoApp = () => {
   return (
     <>
-      {/** Code Testing */}
+      {/** Todo App */}
       <div className="individual-card">
         <Card className="projects">
-          <Card.Img variant="top" src={coding} alt="Code" />
-          <Card.Body>
-            <Card.Title>Code Testing</Card.Title>
+          <Card.Img variant="top" src={todo} alt="todo" />
+          <Card.Body className="cards">
+            <Card.Title>Todo App</Card.Title>
             <Card.Text>
-              This was a small project that I did on my own where I created a
-              landing page for code testing. I created the page using HTML and
-              CSS.
+              A team project created for the JavaScript & React course at
+              Technigo. We created this app using React, React Router, Redux
+              Toolkit and Styled components.
             </Card.Text>
             <div className="website-view-buttons">
-              {" "}
               <a
-                href="https://code-testing-landing-page.web.app/"
+                href="https://todo-app-by-naima-sarah-priya.netlify.app"
                 className="btn btn-secondary"
                 target="_blank"
                 rel="noreferrer"
@@ -27,7 +26,7 @@ const CodeTesting = () => {
                 View Site
               </a>
               <a
-                href="https://github.com/bdnaima/Testing-code-landing-page"
+                href="https://github.com/bdnaima/project-todos-redux"
                 className="btn btn-secondary"
                 target="_blank"
                 rel="noreferrer"
@@ -42,4 +41,4 @@ const CodeTesting = () => {
   );
 };
 
-export default CodeTesting;
+export default TodoApp;

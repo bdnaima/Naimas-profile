@@ -16,22 +16,24 @@ const BringToLight = () => {
               website. I designed and coded the website using HTML, CSS and
               Bootstrap.
             </Card.Text>
-            <a
-              href="https://bringtolight.ca/"
-              className="btn btn-secondary"
-              target="_blank"
-              rel="noreferrer"
-            >
-              View Site
-            </a>
-            <a
-              href="https://github.com/bdnaima/Bring-to-light/commits/master"
-              className="btn btn-secondary"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Code
-            </a>
+            <div className="website-view-buttons">
+              <a
+                href="https://bringtolight.ca/"
+                className="btn btn-secondary"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View Site
+              </a>
+              <a
+                href="https://github.com/bdnaima/Bring-to-light/commits/master"
+                className="btn btn-secondary"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Code
+              </a>
+            </div>
           </Card.Body>
         </Card>
       </div>

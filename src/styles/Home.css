@@ -108,6 +108,11 @@
   width: 50%;
 }
 
+.list-group-flush .list-group-item {
+  padding: 0;
+  margin-top: 1rem;
+}
+
 .skills_heading {
   display: flex;
   justify-content: center;

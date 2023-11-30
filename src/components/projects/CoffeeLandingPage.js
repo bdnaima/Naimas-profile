@@ -16,22 +16,24 @@ const CoffeeLandingPage = () => {
               coffee shop. I created the page using only HTML, CSS and CSS
               Animations.
             </Card.Text>
-            <a
-              href="https://bdnaima.github.io/CoffeeShop/"
-              className="btn btn-secondary"
-              target="_blank"
-              rel="noreferrer"
-            >
-              View Site
-            </a>
-            <a
-              href="https://github.com/bdnaima/CoffeeShop"
-              className="btn btn-secondary"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Code
-            </a>
+            <div className="website-view-buttons">
+              <a
+                href="https://bdnaima.github.io/CoffeeShop/"
+                className="btn btn-secondary"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View Site
+              </a>
+              <a
+                href="https://github.com/bdnaima/CoffeeShop"
+                className="btn btn-secondary"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Code
+              </a>
+            </div>
           </Card.Body>
         </Card>
       </div>

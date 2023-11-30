@@ -10,11 +10,11 @@ import DanceApp from "./projects/DanceApp";
 import GalleryApp from "./projects/GalleryApp";
 import CoffeeLandingPage from "./projects/CoffeeLandingPage";
 import CodeTesting from "./projects/CodeTesting";
+import Survey from "./projects/Survey";
+import MoviesApp from "./projects/MoviesApp";
 
 //Pictures
 import branch from "../assets/images/branch-swirl.png";
-import Survey from "./projects/Survey";
-import MoviesApp from "./projects/MoviesApp";
 
 const Projects = () => {
   return (
