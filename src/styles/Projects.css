@@ -4,12 +4,23 @@
   object-fit: cover;
 }
 .projects-container {
+  width: 78%;
   display: flex;
-  align-items: center;
-  margin-top: 1rem;
-  padding: 1rem;
-  box-shadow: 0 0 30px #000;
+  flex-wrap: wrap;
+  margin: 0 auto;
 }
+
+.projects-container::after {
+  content: "";
+  margin-left: 66.3%;
+}
+
+.individual-card {
+  display: block;
+  flex: 33.3%;
+  padding: 1rem;
+}
+
 .image-branch {
   align-self: center;
   text-align: center;
@@ -18,25 +29,14 @@
 .image-branch img {
   width: 50%;
 }
-.project-title {
-  background-color: #704fa7;
-  padding: 1rem;
-  margin-right: 8%;
-}
 
-.project-title > h1,
-.project-title > p {
-  color: #fff;
-  background: rgba(0, 0, 0, 0.2);
+.projects-title {
+  text-align: center;
   padding: 1rem;
+  margin-top: 6rem;
 }
 
 /*Cards */
-.projects {
-  margin: auto;
-  margin-top: 2rem;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
 
 .projects a {
   margin-right: 1rem;

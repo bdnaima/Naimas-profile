@@ -1,12 +1,13 @@
 import { Card } from "react-bootstrap";
 import coding from "../../assets/images/coding.jpg";
+import "../../styles/Projects.css";
 
 const CodeTesting = () => {
   return (
     <>
       {/** Code Testing */}
-      <div className="col-md-3">
-        <Card className="card projects">
+      <div className="individual-card">
+        <Card className="projects">
           <Card.Img variant="top" src={coding} alt="Code" />
           <Card.Body>
             <Card.Title>Code Testing</Card.Title>

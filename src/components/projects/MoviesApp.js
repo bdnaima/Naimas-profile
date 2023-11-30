@@ -1,23 +1,23 @@
 import { Card } from "react-bootstrap";
-import gallery from "../../assets/images/blackWhite.jpg";
+import movies from "../../assets/images/movies.jpeg";
 import "../../styles/Projects.css";
 
-const GalleryApp = () => {
+const MoviesApp = () => {
   return (
     <>
-      {" "}
-      {/** Gallery website */}
+      {/** Movie app */}
       <div className="individual-card">
         <Card className="projects">
-          <Card.Img variant="top" src={gallery} alt="Trunk with flowers" />
+          <Card.Img variant="top" src={movies} alt="Coffee cup and table" />
           <Card.Body>
-            <Card.Title>Gallery</Card.Title>
+            <Card.Title>Movies Site</Card.Title>
             <Card.Text>
-              This application is a gallery where you sign in and create your
-              own albums. You can also add photos, copy, share and edit albums.
+              This was a project completed at Technigo where I created a movies
+              site, using themoviedb.org API. Here I used React, React Router
+              and CSS.
             </Card.Text>
             <a
-              href="https://gallery-b0bc4.web.app"
+              href="https://movie-app-by-priya-naima-sarah.netlify.app/"
               className="btn btn-secondary"
               target="_blank"
               rel="noreferrer"
@@ -25,7 +25,7 @@ const GalleryApp = () => {
               View Site
             </a>
             <a
-              href="https://github.com/bdnaima/photo-gallery-app/commits/master"
+              href="https://github.com/bdnaima/project-survey-vite"
               className="btn btn-secondary"
               target="_blank"
               rel="noreferrer"
@@ -39,4 +39,4 @@ const GalleryApp = () => {
   );
 };
 
-export default GalleryApp;
+export default MoviesApp;

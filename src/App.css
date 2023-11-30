@@ -4,17 +4,13 @@
   box-sizing: border-box;
 }
 
-#root {
-  background-color: rgb(207, 204, 204);
-}
-
 /* Contact in Homepage */
 .contact {
   text-align: center;
-  background-color: #704fa7;
+  background-color: #f8f9fa;
   margin-top: 5rem;
   padding: 5rem;
-  color: #fff;
+  color: #707071;
 }
 
 .contact h1 {
@@ -27,7 +23,7 @@
 }
 
 #email {
-  color: #fff;
+  color: #707071;
   font-size: 4rem;
   margin: 1rem;
 }
@@ -37,7 +33,7 @@
 }
 
 #gitHub {
-  color: #fff;
+  color: #707071;
   font-size: 4rem;
   margin: 1rem;
 }
@@ -47,7 +43,7 @@
 }
 
 #linkedIn {
-  color: #fff;
+  color: #707071;
   font-size: 3rem;
 }
 #linkedIn:hover {

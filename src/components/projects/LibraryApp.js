@@ -1,12 +1,13 @@
 import { Card } from "react-bootstrap";
 import book from "../../assets/images/pride-and-prejudice.jpg";
+import "../../styles/Projects.css";
 
 const LibraryApp = () => {
   return (
     <>
       {/** Book App */}
-      <div className="col-md-3 mb-3">
-        <Card className="card projects">
+      <div className="individual-card">
+        <Card className="projects">
           <Card.Img variant="top" src={book} alt="Book" />
           <Card.Body className="cards">
             <Card.Title>Library App</Card.Title>

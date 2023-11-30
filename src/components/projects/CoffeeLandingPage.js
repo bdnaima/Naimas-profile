@@ -1,12 +1,13 @@
 import { Card } from "react-bootstrap";
 import coffee from "../../assets/images/coffee.jpg";
+import "../../styles/Projects.css";
 
 const CoffeeLandingPage = () => {
   return (
     <>
       {/** Coffee shop landing page */}
-      <div className="col-md-3">
-        <Card className="card projects">
+      <div className="individual-card">
+        <Card className="projects">
           <Card.Img variant="top" src={coffee} alt="Coffee cup and table" />
           <Card.Body>
             <Card.Title>Coffeeshop landing page</Card.Title>

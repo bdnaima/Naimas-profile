@@ -1,12 +1,13 @@
 import { Card } from "react-bootstrap";
 import dance from "../../assets/images/dancer.jpg";
+import "../../styles/Projects.css";
 
 const DanceApp = () => {
   return (
     <>
       {/** Ballet dance website */}
-      <div className="col-md-3">
-        <Card className="card projects">
+      <div className="individual-card">
+        <Card className="projects">
           <Card.Img variant="top" src={dance} alt="Dancer" />
           <Card.Body>
             <Card.Title>Dance Ballet Academy</Card.Title>

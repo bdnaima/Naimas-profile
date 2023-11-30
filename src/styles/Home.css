@@ -1,21 +1,15 @@
 /*HOME*/
 .row-box {
   display: flex;
-  justify-content: center;
-  background-color: #704fa7;
-  margin-top: 1rem;
+  justify-content: space-evenly;
+  margin-top: 4rem;
 }
 
 .laptop {
   align-self: center;
 }
 .laptop > img,
-.laptop > h1 {
-  max-width: 100%;
-  font-size: 1.5rem;
-  background: rgba(0, 0, 0, 0.2);
-  color: #fff;
-  padding: 1rem;
+.laptop > h2 {
   text-align: center;
 }
 
@@ -33,6 +27,10 @@
   border-radius: 50%;
 }
 
+#projects-section {
+  text-align: center;
+}
+
 #img-move {
   animation: memove 5s infinite;
   animation-timing-function: ease;
@@ -44,7 +42,7 @@
     transform: translate(0);
   }
   50% {
-    transform: translate(3%);
+    transform: translate(2%);
   }
   100% {
     transform: translate(0);
@@ -54,7 +52,11 @@
 /* About me */
 .about-section {
   display: flex;
-  margin-top: 1rem;
+  justify-content: center;
+}
+.about-heading {
+  margin-top: 10rem;
+  text-align: center;
 }
 .flower-image {
   align-self: center;
@@ -62,35 +64,28 @@
 }
 .flower-image img {
   width: 60%;
+  opacity: 0.7;
 }
 
 .about-me {
-  max-width: 45%;
-  margin-left: auto;
+  max-width: 50%;
   padding: 2rem;
   margin-top: 2rem;
-  margin-right: 2rem;
-  background-color: #704fa7;
-  color: #fff;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-.about-me h1 {
-  background: rgba(0, 0, 0, 0.2);
-  padding: 1rem;
+  margin-right: 11rem;
+  border: 1px solid black;
+  font-size: 1.2rem;
 }
 
 /* Skills */
 .skills-box1 {
   display: flex;
-  width: 45%;
+  width: 50%;
   padding: 1rem;
   margin-top: 1rem;
   margin-left: 2rem;
-  background: #704fa7;
-  color: white;
+  margin-right: 2rem;
+  border: 1px solid black;
   font-weight: bold;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .skills-box1 ul {
   width: 50%;
@@ -99,15 +94,13 @@
 
 .skills-box2 {
   display: flex;
-  width: 45%;
+  width: 50%;
   padding: 1rem;
   margin-top: 1rem;
   margin-left: auto;
   margin-right: 2rem;
-  background: #704fa7;
-  color: white;
+  border: 1px solid black;
   font-weight: bold;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .skills-box2 ul {
@@ -117,19 +110,15 @@
 
 .skills_heading {
   display: flex;
-  margin-left: 19%;
-  align-self: center;
-  background-color: #704fa7;
-  opacity: 0.8;
-  color: #fff;
-  padding: 2rem;
-  border-radius: 20%;
-  box-shadow: 0 0 30px #000;
+  justify-content: center;
+  margin: auto;
+  margin-top: 12rem;
+  margin-bottom: 2rem;
 }
 
 .skills_heading h1 {
   margin-left: 20px;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .skills_icon_person {
@@ -138,8 +127,9 @@
 
 .skills_heading_position {
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: flex-end;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
 }
 
 /* Media Queries */

@@ -1,12 +1,13 @@
 import { Card } from "react-bootstrap";
 import weatherApp from "../../assets/images/weather-app.png";
+import "../../styles/Projects.css";
 
 const WeatherApp = () => {
   return (
     <>
       {/** Weather App */}
-      <div className="col-md-3 mb-3">
-        <Card className="card projects">
+      <div className="individual-card">
+        <Card className="projects">
           <Card.Img variant="top" src={weatherApp} alt="Weather" />
           <Card.Body className="cards">
             <Card.Title>Weather App</Card.Title>

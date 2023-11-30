@@ -1,12 +1,13 @@
 import { Card } from "react-bootstrap";
 import music from "../../assets/images/music.png";
+import "../../styles/Projects.css";
 
 const MusicApp = () => {
   return (
     <>
       {/** Music App */}
-      <div className="col-md-3 mb-3">
-        <Card className="card projects">
+      <div className="individual-card">
+        <Card className="projects">
           <Card.Img variant="top" src={music} alt="Albums" />
           <Card.Body className="cards">
             <Card.Title>Music app</Card.Title>

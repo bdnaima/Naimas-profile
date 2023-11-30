@@ -1,15 +1,23 @@
 import "../styles/Home.css";
+import "../styles/Projects.css";
 
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
-import orangeLaptop from "../assets/images/orange-laptop.png";
 import imageOfMe from "../assets/images/Naima_at_work03.jpg";
-import flower from "../assets/images/flower.png";
 import sunflower from "../assets/images/sunflower.png";
 import { MdEmail } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
-import { GiSkills } from "react-icons/gi";
 import { SiLinkedin } from "react-icons/si";
+import MoviesApp from "./projects/MoviesApp";
+import MusicApp from "./projects/MusicApp";
+import Survey from "./projects/Survey";
+import WeatherApp from "./projects/WeatherApp";
+import LibraryApp from "./projects/LibraryApp";
+import BringToLight from "./projects/BringToLight";
+import GalleryApp from "./projects/GalleryApp";
+import DanceApp from "./projects/DanceApp";
+import CoffeeLandingPage from "./projects/CoffeeLandingPage";
+import CodeTesting from "./projects/CodeTesting";
 
 const Home = () => {
   const { ref } = useInView({
@@ -25,8 +33,8 @@ const Home = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 2 }}
         >
-          <h1>I'm Naima, Frontend developer & UX/UI Designer</h1>
-          <img src={orangeLaptop} alt="orange laptop" />
+          <h2>Hello, I'm Naima</h2>
+          <h4>Frontend developer & UX/UI Designer</h4>
         </motion.div>
         <motion.div
           className="stack"
@@ -44,18 +52,18 @@ const Home = () => {
               <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
                 <stop
                   offset="0%"
-                  style={{ stopColor: "rgb(255, 95, 109)" }}
+                  style={{ stopColor: "rgb(32, 38, 57)" }}
                 ></stop>
                 <stop
                   offset="100%"
-                  style={{ stopColor: "rgb(255, 165, 0)" }}
+                  style={{ stopColor: "rgb(255,255,255)" }}
                 ></stop>
               </linearGradient>
             </defs>
             <path fill="url(#gradient)">
               <animate
                 attributeName="d"
-                dur="10000ms"
+                dur="15000ms"
                 repeatCount="indefinite"
                 values="M409,310Q393,370,339.5,411.5Q286,453,217.5,439.5Q149,426,96,375.5Q43,325,83.5,264.5Q124,204,143,151Q162,98,221.5,85Q281,72,317.5,117.5Q354,163,389.5,206.5Q425,250,409,310Z;
 
@@ -71,47 +79,62 @@ const Home = () => {
               ></animate>
             </path>
           </svg>
-          <img id="img-move" src={imageOfMe} alt="picture of Naima" />
+          <img id="img-move" src={imageOfMe} alt="Naima" />
         </motion.div>
+      </div>
+      <div id="aboutme-section" className="about-heading">
+        <h1>About me</h1>
       </div>
       <div ref={ref} className="about-section">
         <div className="flower-image">
-          <img src={flower} alt="purple flower" />
+          <motion.img
+            src={sunflower}
+            alt="orange sunflower"
+            animate={{
+              rotate: [0, 200, 200, 0],
+            }}
+            transition={{ repeat: Infinity, delay: 0.1, duration: 10 }}
+          ></motion.img>
         </div>
+
         <div className="about-me">
-          <h1>ABOUT ME</h1>
           <p>
-            I have become passionate in designing and developing responsive
-            websites for the past five years and continuously enjoy learning new
-            technologies within web development.
+            I have become very interested in designing and developing responsive
+            websites and continuously enjoy learning new technologies within web
+            development.
           </p>
           <p>
-            I have also graduated from a two-year program called Frontend
-            Development and have worked as a junior frontend developer at Ikea.
-            I have learned to write clean code and am able to create dynamic
-            websites using HTML, CSS, JavaScript and React. I also have
-            experience as a UX/UI designer and love to conduct user research, as
-            well as creating wireframes and prototypes using Figma and Adobe XD.
+            I have graduated from a two-year program called Frontend Development
+            and have worked as a Frontend Developer at Ikea. Another course I
+            graduated from was at Technigo, which was an upskill course in
+            JavaScript and React. During the course, we were assigned weekly
+            projects and had the opportunity to work in a team-oriented
+            structure, replicating the collaborative nature of real-world
+            development teams. I have learned to write clean code and am able to
+            create dynamic websites using HTML, CSS, JavaScript, React and
+            Redux. I also have experience as a UX/UI designer and love to
+            conduct user research, as well as creating wireframes and prototypes
+            using Figma and Adobe XD.
           </p>
         </div>
       </div>
 
+      <div id="experience-section" className="skills_heading">
+        <h1>Experience</h1>
+      </div>
       <div>
         <div className="skills_heading_position">
-          <div className="skills_heading">
-            <GiSkills className="skills_icon_person" />
-            <h1>Skills</h1>
-          </div>
           <div className="skills-box1">
             <ul className="list-group list-group-flush">
               <h3>Frontend</h3>
               <li className="list-group-item">HTML5</li>
-              <li className="list-group-item">CSS</li>
+              <li className="list-group-item">CSS/Sass</li>
               <li className="list-group-item">CSS Animations</li>
+              <li className="list-group-item">Styled Components</li>
               <li className="list-group-item">Bootstrap</li>
               <li className="list-group-item">JavaScript</li>
               <li className="list-group-item">React</li>
-              <li className="list-group-item">React Native</li>
+              <li className="list-group-item">React Redux</li>
               <li className="list-group-item">Framer Motion</li>
             </ul>
 
@@ -121,21 +144,10 @@ const Home = () => {
               <li className="list-group-item">Express</li>
               <li className="list-group-item">Firebase</li>
               <li className="list-group-item">MongoDB</li>
+              <li className="list-group-item">GraphQL</li>
             </ul>
           </div>
-        </div>
 
-        <div className="about-section">
-          <div className="flower-image">
-            <motion.img
-              src={sunflower}
-              alt="orange sunflower"
-              animate={{
-                rotate: [0, 200, 200, 0],
-              }}
-              transition={{ repeat: Infinity, delay: 0.1, duration: 10 }}
-            ></motion.img>
-          </div>
           <div className="skills-box2">
             <ul className="list-group list-group-flush">
               <h3>Design</h3>
@@ -156,14 +168,29 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <h1 id="projects-section" className="projects-title">
+        Projects
+      </h1>
+      <div className="projects-container">
+        <MoviesApp />
+        <MusicApp />
+        <Survey />
+        <WeatherApp />
+        <LibraryApp />
+        <BringToLight />
+        <DanceApp />
+        <GalleryApp />
+        <CoffeeLandingPage />
+        <CodeTesting />
+      </div>
 
-      <div className="contact">
+      <div className="contact" id="contact-section">
         <h1>Reach me here</h1>
         <motion.div
           className="icons"
           whileHover={{
             scale: 1.1,
-            boxShadow: "0px 0px 8px rgb(255, 255, 255)",
+            boxShadow: "0px 0px 8px rgb(169,169,169)",
           }}
         >
           <a href="mailto: naima.maria.malik@gmail.com">

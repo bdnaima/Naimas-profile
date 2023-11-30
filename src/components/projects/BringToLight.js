@@ -1,12 +1,13 @@
 import { Card } from "react-bootstrap";
 import tree from "../../assets/images/tree.jpg";
+import "../../styles/Projects.css";
 
 const BringToLight = () => {
   return (
     <>
       {/** Bring to light */}
-      <div className="col-md-3 ">
-        <Card className="card projects">
+      <div className="individual-card">
+        <Card className="projects">
           <Card.Img variant="top" src={tree} alt="Field with flowers" />
           <Card.Body className="cards">
             <Card.Title>Bring To Light</Card.Title>

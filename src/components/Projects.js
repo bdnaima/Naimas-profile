@@ -13,6 +13,8 @@ import CodeTesting from "./projects/CodeTesting";
 
 //Pictures
 import branch from "../assets/images/branch-swirl.png";
+import Survey from "./projects/Survey";
+import MoviesApp from "./projects/MoviesApp";
 
 const Projects = () => {
   return (
@@ -51,7 +53,9 @@ const Projects = () => {
       </motion.div>
 
       <div className="row p-5 mt-4">
+        <MoviesApp />
         <MusicApp />
+        <Survey />
         <WeatherApp />
         <LibraryApp />
         <BringToLight />
