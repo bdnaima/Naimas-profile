@@ -54,7 +54,7 @@ const Home = () => {
               <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
                 <stop
                   offset="0%"
-                  style={{ stopColor: "rgb(32, 38, 57)" }}
+                  style={{ stopColor: "rgb(181, 146, 109)" }}
                 ></stop>
                 <stop
                   offset="100%"
@@ -88,17 +88,6 @@ const Home = () => {
         <h1>About me</h1>
       </div>
       <div ref={ref} className="about-section">
-        <div className="flower-image">
-          <motion.img
-            src={sunflower}
-            alt="orange sunflower"
-            animate={{
-              rotate: [0, 200, 200, 0],
-            }}
-            transition={{ repeat: Infinity, delay: 0.1, duration: 10 }}
-          ></motion.img>
-        </div>
-
         <div className="about-me">
           <p>
             I have become very interested in designing and developing responsive
@@ -107,8 +96,8 @@ const Home = () => {
           </p>
           <p>
             I have graduated from a two-year program called Frontend Development
-            and have worked as a Frontend Developer at Ikea. Another course I
-            graduated from was at Technigo, which was an upskill course in
+            and have worked as a Frontend Developer at Ikea. I have also
+            graduated from Technigo, where I upskilled my knowledge in
             JavaScript and React. During the course, we were assigned weekly
             projects and had the opportunity to work in a team-oriented
             structure, replicating the collaborative nature of real-world
@@ -118,6 +107,16 @@ const Home = () => {
             conduct user research, as well as creating wireframes and prototypes
             using Figma and Adobe XD.
           </p>
+        </div>
+        <div className="flower-image">
+          <motion.img
+            src={sunflower}
+            alt="orange sunflower"
+            animate={{
+              rotate: [0, 200, 200, 0],
+            }}
+            transition={{ repeat: Infinity, delay: 0.1, duration: 10 }}
+          ></motion.img>
         </div>
       </div>
 

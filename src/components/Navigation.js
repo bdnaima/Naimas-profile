@@ -32,7 +32,7 @@ const Navigation = () => {
 
           <div id="navbarNavAltMarkup">
             <button
-              class="navbar-toggler"
+              className="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent"
@@ -40,7 +40,7 @@ const Navigation = () => {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span class="navbar-toggler-icon"></span>
+              <span className="navbar-toggler-icon"></span>
             </button>
             <div
               className="collapse navbar-collapse"
@@ -51,28 +51,28 @@ const Navigation = () => {
                 to="#"
                 onClick={() => handleLinkClick("aboutme-section")}
               >
-                <motion.h4 whileHover={{ scale: 1.3 }}>About</motion.h4>
+                <motion.h4 whileHover={{ scale: 1.2 }}>About</motion.h4>
               </Link>
               <Link
                 className="nav-link"
                 to="#"
                 onClick={() => handleLinkClick("experience-section")}
               >
-                <motion.h4 whileHover={{ scale: 1.3 }}>Experience</motion.h4>
+                <motion.h4 whileHover={{ scale: 1.2 }}>Experience</motion.h4>
               </Link>
               <Link
                 className="nav-link"
                 to="#"
                 onClick={() => handleLinkClick("projects-section")}
               >
-                <motion.h4 whileHover={{ scale: 1.3 }}>My work</motion.h4>
+                <motion.h4 whileHover={{ scale: 1.2 }}>My work</motion.h4>
               </Link>
               <Link
                 className="nav-link"
                 to="#"
                 onClick={() => handleLinkClick("contact-section")}
               >
-                <motion.h4 whileHover={{ scale: 1.3 }}>Contact</motion.h4>
+                <motion.h4 whileHover={{ scale: 1.2 }}>Contact</motion.h4>
               </Link>
             </div>
           </div>

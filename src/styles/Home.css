@@ -2,7 +2,9 @@
 .row-box {
   display: flex;
   justify-content: space-evenly;
-  margin: 1.5rem;
+  margin: 0 1.5rem 0 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   background-color: #f9efe7;
 }
 
@@ -21,17 +23,12 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  margin-left: -2rem;
 }
 
 .stack > img {
   position: absolute;
   width: 50%;
   border-radius: 50%;
-}
-
-#projects-section {
-  text-align: center;
 }
 
 #img-move {
@@ -57,25 +54,27 @@
   display: flex;
   justify-content: center;
 }
+
 .about-heading {
+  display: flex;
+  width: 81%;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 10rem;
-  text-align: center;
 }
 .flower-image {
   align-self: center;
   text-align: center;
+  width: 33%;
 }
 .flower-image img {
-  width: 60%;
+  width: 70%;
   opacity: 0.7;
 }
 
 .about-me {
-  max-width: 50%;
-  padding: 2rem;
-  margin-top: 2rem;
-  margin-right: 11rem;
-  border: 1px solid black;
+  width: 48%;
+  margin-top: 1rem;
   font-size: 1.2rem;
 }
 
@@ -83,12 +82,9 @@
 .skills-box1 {
   display: flex;
   width: 50%;
-  padding: 1rem;
-  margin-top: 1rem;
-  margin-left: 2rem;
+  border: 1px solid;
   margin-right: 2rem;
-  border: 1px solid black;
-  font-weight: bold;
+  margin-bottom: 2rem;
 }
 .skills-box1 ul {
   width: 50%;
@@ -98,12 +94,8 @@
 .skills-box2 {
   display: flex;
   width: 50%;
-  padding: 1rem;
-  margin-top: 1rem;
-  margin-left: auto;
-  margin-right: 2rem;
-  border: 1px solid black;
-  font-weight: bold;
+  border: 1px solid;
+  margin-bottom: 2rem;
 }
 
 .skills-box2 ul {
@@ -118,19 +110,11 @@
 
 .skills_heading {
   display: flex;
-  justify-content: center;
-  margin: auto;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 12rem;
   margin-bottom: 2rem;
-}
-
-.skills_heading h1 {
-  margin-left: 20px;
-  font-size: 3rem;
-}
-
-.skills_icon_person {
-  font-size: 4rem;
 }
 
 .skills_heading_position {
@@ -141,16 +125,40 @@
 }
 
 /* Media Queries */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   /* Home */
   .row-box {
     flex-direction: column;
     align-items: center;
+    padding: 1rem;
+  }
+
+  .stack {
+    transform: scale(0.7);
+    margin-top: -5rem;
+    margin-bottom: -3rem;
+  }
+
+  .heading-me h2 {
+    text-align: center;
+    font-size: 5vh;
+  }
+  .heading-me h3 {
+    text-align: center;
+    font-size: 3vh;
+  }
+
+  .about-me {
+    width: 100%;
+    padding: 0 2rem 0 2rem;
   }
 
   .about-section {
-    flex-direction: column;
-    text-align: center;
+    display: block;
+  }
+
+  .about-heading {
+    margin-left: 2rem;
   }
 
   .about-section p {
@@ -158,12 +166,7 @@
   }
 
   .flower-image img {
-    width: 40%;
-  }
-
-  .about-me {
-    margin-right: auto;
-    max-width: 100%;
+    display: none;
   }
 
   .skills-box1 {
@@ -182,7 +185,10 @@
   }
 
   .skills_heading {
-    margin-left: 0%;
-    margin-top: 1rem;
+    margin-top: 3rem;
   }
+}
+
+@media (min-heigh: 820px) {
+  /* Projects */
 }
