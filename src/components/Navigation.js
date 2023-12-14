@@ -20,7 +20,7 @@ const Navigation = () => {
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light p-0">
+      <nav className="navbar navbar-expand-lg">
         <motion.div
           className="container-fluid"
           initial={{ y: -250 }}
@@ -28,37 +28,51 @@ const Navigation = () => {
           style={{ justifyContent: "space-around" }}
           transition={{ delay: 0.2, type: "spring", stiffness: 150 }}
         >
-          <motion.h2>Naima Malik</motion.h2>
+          <motion.h3>Naima Malik</motion.h3>
 
           <div id="navbarNavAltMarkup">
-            <div className="navbar-nav">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              className="collapse navbar-collapse"
+              id="navbarSupportedContent"
+            >
               <Link
                 className="nav-link"
                 to="#"
                 onClick={() => handleLinkClick("aboutme-section")}
               >
-                <motion.h3 whileHover={{ scale: 1.3 }}>About</motion.h3>
+                <motion.h4 whileHover={{ scale: 1.3 }}>About</motion.h4>
               </Link>
               <Link
                 className="nav-link"
                 to="#"
                 onClick={() => handleLinkClick("experience-section")}
               >
-                <motion.h3 whileHover={{ scale: 1.3 }}>Experience</motion.h3>
+                <motion.h4 whileHover={{ scale: 1.3 }}>Experience</motion.h4>
               </Link>
               <Link
                 className="nav-link"
                 to="#"
                 onClick={() => handleLinkClick("projects-section")}
               >
-                <motion.h3 whileHover={{ scale: 1.3 }}>Projects</motion.h3>
+                <motion.h4 whileHover={{ scale: 1.3 }}>My work</motion.h4>
               </Link>
               <Link
                 className="nav-link"
                 to="#"
                 onClick={() => handleLinkClick("contact-section")}
               >
-                <motion.h3 whileHover={{ scale: 1.3 }}>Contact</motion.h3>
+                <motion.h4 whileHover={{ scale: 1.3 }}>Contact</motion.h4>
               </Link>
             </div>
           </div>

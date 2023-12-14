@@ -4,6 +4,14 @@
   margin-top: 1.5rem;
 }
 
+.container-fluid h3 {
+  align-self: flex-start;
+}
+
 .nav-link {
   margin-right: 2rem;
+}
+
+.navbar-toggler {
+  margin-bottom: 1rem;
 }

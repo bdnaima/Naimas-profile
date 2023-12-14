@@ -2,15 +2,18 @@
 .row-box {
   display: flex;
   justify-content: space-evenly;
-  margin-top: 4rem;
+  margin: 1.5rem;
+  background-color: #f9efe7;
 }
 
-.laptop {
+.heading-me {
   align-self: center;
+  font-family: serif;
 }
-.laptop > img,
-.laptop > h2 {
-  text-align: center;
+
+.heading-me h2 {
+  font-size: 7vh;
+  font-weight: bold;
 }
 
 .stack {

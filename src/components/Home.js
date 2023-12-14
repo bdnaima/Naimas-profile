@@ -30,13 +30,13 @@ const Home = () => {
     <>
       <div className="row-box">
         <motion.div
-          className="laptop"
+          className="heading-me"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 2 }}
         >
           <h2>Hello, I'm Naima</h2>
-          <h4>Frontend developer & UX/UI Designer</h4>
+          <h3>Frontend developer & Web Designer</h3>
         </motion.div>
         <motion.div
           className="stack"
@@ -171,7 +171,7 @@ const Home = () => {
         </div>
       </div>
       <h1 id="projects-section" className="projects-title">
-        Projects
+        My work
       </h1>
       <div className="projects-container">
         <MoviesApp />
