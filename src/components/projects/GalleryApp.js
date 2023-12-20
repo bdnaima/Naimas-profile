@@ -13,9 +13,9 @@ const GalleryApp = () => {
           <Card.Body>
             <Card.Title style={{ fontWeight: "300" }}>Gallery</Card.Title>
             <Card.Text>
-              For this applicatoin, the user has to sign in order to upload,
-              edit, share or save photos to an album. I created this application
-              with React and Firebase.
+              For this application, the user has to sign in to be able to
+              upload, edit, share or save photos to an album. I created this
+              application with React and Firebase.
             </Card.Text>
             <div className="website-view-buttons">
               <a
