@@ -11,10 +11,11 @@ const GalleryApp = () => {
         <Card className="projects">
           <Card.Img variant="top" src={gallery} alt="Trunk with flowers" />
           <Card.Body>
-            <Card.Title>Gallery</Card.Title>
+            <Card.Title style={{ fontWeight: "300" }}>Gallery</Card.Title>
             <Card.Text>
-              This application is a gallery where you sign in and create your
-              own albums. You can also add photos, copy, share and edit albums.
+              For this applicatoin, the user has to sign in order to upload,
+              edit, share or save photos to an album. I created this application
+              with React and Firebase.
             </Card.Text>
             <div className="website-view-buttons">
               <a

@@ -10,7 +10,7 @@ const CodeTesting = () => {
         <Card className="projects">
           <Card.Img variant="top" src={coding} alt="Code" />
           <Card.Body>
-            <Card.Title>Code Testing</Card.Title>
+            <Card.Title style={{ fontWeight: "300" }}>Code Testing</Card.Title>
             <Card.Text>
               This was a small project that I did on my own where I created a
               landing page for code testing. I created the page using HTML and

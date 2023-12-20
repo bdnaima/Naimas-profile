@@ -10,7 +10,7 @@ const Survey = () => {
         <Card className="projects">
           <Card.Img variant="top" src={drinks} alt="Coffee cup and table" />
           <Card.Body>
-            <Card.Title>Drinks Survey</Card.Title>
+            <Card.Title style={{ fontWeight: "300" }}>Drinks Survey</Card.Title>
             <Card.Text>
               This was a team project completed at Technigo where I created a
               survey about drinks. I created the page using React and CSS.

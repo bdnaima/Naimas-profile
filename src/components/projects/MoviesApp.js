@@ -10,7 +10,7 @@ const MoviesApp = () => {
         <Card className="projects">
           <Card.Img variant="top" src={movies} alt="Coffee cup and table" />
           <Card.Body>
-            <Card.Title>Movies Site</Card.Title>
+            <Card.Title style={{ fontWeight: "300" }}>Movies Site</Card.Title>
             <Card.Text>
               This was a project completed at Technigo where I created a movies
               site, using themoviedb.org API. Here I used React, React Router

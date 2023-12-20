@@ -15,7 +15,7 @@ const FoodQuiz = () => {
             style={{ width: "17.3rem" }}
           />
           <Card.Body>
-            <Card.Title>Food Quiz</Card.Title>
+            <Card.Title style={{ fontWeight: "300" }}>Food Quiz</Card.Title>
             <Card.Text>
               This was a project completed in a team where we created a food
               quiz that includes a timer and the score. Here we used React,

@@ -37,9 +37,15 @@
   margin-right: auto;
   margin-bottom: 1rem;
   margin-top: 6rem;
+  font-weight: 200;
 }
 
 /*Cards */
+
+.card-text {
+  color: gray;
+}
+
 .food-image {
   width: 4px;
 }

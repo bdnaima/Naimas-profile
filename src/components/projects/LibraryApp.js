@@ -10,11 +10,11 @@ const LibraryApp = () => {
         <Card className="projects">
           <Card.Img variant="top" src={book} alt="Book" />
           <Card.Body className="cards">
-            <Card.Title>Library App</Card.Title>
+            <Card.Title style={{ fontWeight: "300" }}>Library App</Card.Title>
             <Card.Text>
-              Another project created for the JavaScript & React course at
-              Technigo. I created this app using HTML, CSS and vanilla
-              JavaScript.
+              This project was created for the JavaScript & React course at
+              Technigo. I created this app from scratch using HTML, CSS and
+              vanilla JavaScript.
             </Card.Text>
             <div className="website-view-buttons">
               <a

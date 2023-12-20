@@ -10,7 +10,9 @@ const CoffeeLandingPage = () => {
         <Card className="projects">
           <Card.Img variant="top" src={coffee} alt="Coffee cup and table" />
           <Card.Body>
-            <Card.Title>Coffeeshop landing page</Card.Title>
+            <Card.Title style={{ fontWeight: "300" }}>
+              Coffeeshop landing page
+            </Card.Title>
             <Card.Text>
               This was a small project where I created a landing page for a
               coffee shop. I created the page using only HTML, CSS and CSS

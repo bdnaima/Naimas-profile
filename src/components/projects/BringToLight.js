@@ -10,7 +10,9 @@ const BringToLight = () => {
         <Card className="projects">
           <Card.Img variant="top" src={tree} alt="Field with flowers" />
           <Card.Body className="cards">
-            <Card.Title>Bring To Light</Card.Title>
+            <Card.Title style={{ fontWeight: "300" }}>
+              Bring To Light
+            </Card.Title>
             <Card.Text>
               This was a project for a family member who needed a counselling
               website. I designed and coded the website using HTML, CSS and

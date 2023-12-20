@@ -10,7 +10,7 @@ const TodoApp = () => {
         <Card className="projects">
           <Card.Img variant="top" src={todo} alt="todo" />
           <Card.Body className="cards">
-            <Card.Title>Todo App</Card.Title>
+            <Card.Title style={{ fontWeight: "300" }}>Todo App</Card.Title>
             <Card.Text>
               A team project created for the JavaScript & React course at
               Technigo. We created this app using React, React Router, Redux

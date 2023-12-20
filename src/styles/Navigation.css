@@ -6,10 +6,14 @@
 
 .container-fluid h3 {
   align-self: flex-start;
+  font-weight: 300;
 }
 
 .nav-link {
   margin-right: 2rem;
+}
+.nav-link h4 {
+  font-weight: 300;
 }
 
 .navbar-toggler {

@@ -10,11 +10,11 @@ const MusicApp = () => {
         <Card className="projects">
           <Card.Img variant="top" src={music} alt="Albums" />
           <Card.Body className="cards">
-            <Card.Title>Music app</Card.Title>
+            <Card.Title style={{ fontWeight: "300" }}>Music app</Card.Title>
             <Card.Text>
               This was a group project that we created together for the
-              JavaScript & React course at Technigo. It was built with React and
-              CSS.
+              JavaScript & React course at Technigo. We built this application
+              with React and CSS.
             </Card.Text>
             <div className="website-view-buttons">
               <a

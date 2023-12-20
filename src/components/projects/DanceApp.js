@@ -10,7 +10,9 @@ const DanceApp = () => {
         <Card className="projects">
           <Card.Img variant="top" src={dance} alt="Dancer" />
           <Card.Body>
-            <Card.Title>Dance Ballet Academy</Card.Title>
+            <Card.Title style={{ fontWeight: "300" }}>
+              Dance Ballet Academy
+            </Card.Title>
             <Card.Text>
               A friend of mine is a dance teacher, so I decided to create a
               website for her. I coded and designed the website with React,

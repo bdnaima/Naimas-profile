@@ -10,7 +10,7 @@ const WeatherApp = () => {
         <Card className="projects">
           <Card.Img variant="top" src={weatherApp} alt="Weather" />
           <Card.Body className="cards">
-            <Card.Title>Weather App</Card.Title>
+            <Card.Title style={{ fontWeight: "300" }}>Weather App</Card.Title>
             <Card.Text>
               This was a group project that I created for the JavaScript & React
               course at Technigo. It was built with HTML, CSS, CSS animations

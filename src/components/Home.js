@@ -136,6 +136,8 @@ const Home = () => {
               <li className="list-group-item">JavaScript</li>
               <li className="list-group-item">React</li>
               <li className="list-group-item">React Redux</li>
+              <li className="list-group-item">Webflow</li>
+              <li className="list-group-item">Lottie Animations</li>
               <li className="list-group-item">Framer Motion</li>
             </ul>
 
