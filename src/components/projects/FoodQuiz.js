@@ -23,7 +23,7 @@ const FoodQuiz = () => {
             </Card.Text>
             <div className="website-view-buttons">
               <a
-                href="https://movie-app-by-priya-naima-sarah.netlify.app/"
+                href="https://quiz-app-by-naima-sarah-priya.netlify.app/"
                 className="btn btn-secondary"
                 target="_blank"
                 rel="noreferrer"

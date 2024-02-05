@@ -36,7 +36,7 @@ const Home = () => {
           transition={{ delay: 0.5, duration: 2 }}
         >
           <h2>Hello, I'm Naima</h2>
-          <h3>Frontend developer & Web Designer</h3>
+          <h3>Frontend developer & Web designer</h3>
         </motion.div>
         <motion.div
           className="stack"
