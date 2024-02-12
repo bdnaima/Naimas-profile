@@ -75,6 +75,10 @@
   .projects-container {
     width: 78%;
   }
+
+  .card-img-top {
+    height: 9rem;
+  }
   .food-img {
     height: 9rem;
   }
