@@ -2,6 +2,7 @@
 .card-img-top {
   height: 12vw;
   object-fit: cover;
+  scale: 0.95;
 }
 .projects-container {
   width: 82%;
@@ -17,7 +18,7 @@
 
 .individual-card {
   display: block;
-  flex: 33.3%;
+  flex: 34%;
   padding: 1rem;
 }
 
@@ -46,8 +47,9 @@
   color: gray;
 }
 
-.food-image {
-  width: 4px;
+.food-img {
+  width: 28.5rem;
+  margin: auto;
 }
 
 .website-view-buttons {
@@ -72,6 +74,9 @@
   /* Projects */
   .projects-container {
     width: 78%;
+  }
+  .food-img {
+    height: 9rem;
   }
 }
 

@@ -8,12 +8,7 @@ const FoodQuiz = () => {
       {/** Food app */}
       <div className="individual-card">
         <Card className="projects">
-          <Card.Img
-            variant="top"
-            src={food}
-            alt="Food"
-            style={{ width: "17.3rem" }}
-          />
+          <Card.Img variant="top" src={food} alt="Food" className="food-img" />
           <Card.Body>
             <Card.Title style={{ fontWeight: "300" }}>Food Quiz</Card.Title>
             <Card.Text>
