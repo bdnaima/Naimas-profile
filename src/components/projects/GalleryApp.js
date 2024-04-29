@@ -1,5 +1,5 @@
 import { Card } from "react-bootstrap";
-import gallery from "../../assets/images/blackWhite.jpg";
+import gallery from "../../assets/images/albumCover.jpg";
 import "../../styles/Projects.css";
 
 const GalleryApp = () => {

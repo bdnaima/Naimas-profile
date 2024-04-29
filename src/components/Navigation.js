@@ -67,6 +67,14 @@ const Navigation = () => {
               >
                 <motion.h4 whileHover={{ scale: 1.2 }}>My work</motion.h4>
               </Link>
+              <a
+                className="nav-link"
+                target="_blank"
+                rel="noreferrer"
+                href="https://naimas-uxui-portfolio.netlify.app/"
+              >
+                <motion.h4 whileHover={{ scale: 1.2 }}>UX/UI</motion.h4>
+              </a>
               <Link
                 className="nav-link"
                 to="#"
